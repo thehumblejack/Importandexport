@@ -102,8 +102,7 @@
 		href='wp-content/plugins/qi-blocks/assets/dist/main%EF%B9%96ver=1.3.3.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='rabbit_css-css'
 		href='https://export.Importiny.com/_toolbar/assets/css/rbt-modules.css?ver=6.8.3' type='text/css' media='all' />
-	<link rel='stylesheet' id='sr7css-css' href='wp-content/plugins/revslider/public/css/sr7%EF%B9%96ver=6.7.20.css'
-		type='text/css' media='all' />
+	<!-- Slider Revolution CSS removed - no longer needed -->
 	<style id='woocommerce-inline-inline-css' type='text/css'>
 		.woocommerce form .form-row .required {
 			visibility: visible;
@@ -261,10 +260,7 @@
 		id="jquery-core-js"></script>
 	<script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min%EF%B9%96ver=3.4.1.js"
 		id="jquery-migrate-js"></script>
-	<script type="text/javascript" src="wp-content/plugins/revslider/public/js/libs/tptools%EF%B9%96ver=6.7.20.js"
-		id="tp-tools-js" async="async" data-wp-strategy="async"></script>
-	<script type="text/javascript" src="wp-content/plugins/revslider/public/js/sr7%EF%B9%96ver=6.7.20.js" id="sr7-js"
-		async="async" data-wp-strategy="async"></script>
+	<!-- Slider Revolution JS removed - no longer needed -->
 	<script type="text/javascript"
 		src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min%EF%B9%96ver=2.7.0-wc.9.3.3.js"
 		id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
@@ -399,42 +395,6 @@
 		}
 	</style>
 	<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-	<script>
-		window._tpt ??= {};
-		window.SR7 ??= {};
-		_tpt.R ??= {};
-		_tpt.R.fonts ??= {};
-		_tpt.R.fonts.customFonts ??= {};
-		SR7.devMode = false;
-		SR7.F ??= {};
-		SR7.G ??= {};
-		SR7.LIB ??= {};
-		SR7.E ??= {};
-		SR7.E.gAddons ??= {};
-		SR7.E.php ??= {};
-		SR7.E.nonce = '43f4dd7d4c';
-		SR7.E.ajaxurl = 'https://freightexpress.qodeinteractive.com/wp-admin/admin-ajax.php';
-		SR7.E.resturl = 'https://freightexpress.qodeinteractive.com/wp-json/';
-		SR7.E.slug_path = 'revslider/revslider.php';
-		SR7.E.slug = 'revslider';
-		SR7.E.plugin_url = 'https://freightexpress.qodeinteractive.com/wp-content/plugins/revslider/';
-		SR7.E.wp_plugin_url = 'https://freightexpress.qodeinteractive.com/wp-content/plugins/';
-		SR7.E.revision = '6.7.20';
-		SR7.E.fontBaseUrl = '//fonts.googleapis.com/css2?family=';
-		SR7.G.breakPoints = [1920, 1600, 1202, 680];
-		SR7.E.modules = ['module', 'page', 'slide', 'layer', 'draw', 'animate', 'srtools', 'canvas', 'defaults', 'carousel', 'navigation', 'media', 'modifiers', 'migration'];
-		SR7.E.libs = ['WEBGL'];
-		SR7.E.css = ['csslp', 'cssbtns', 'cssfilters', 'cssnav', 'cssmedia'];
-		SR7.E.resources = {};
-		SR7.JSON ??= {};
-		/*! Slider Revolution 7.0 - Page Processor */
-		!function () {
-			"use strict"; window.SR7 ??= {}, window._tpt ??= {}, SR7.version = "Slider Revolution 6.7.16", _tpt.getWinDim = function (t) { _tpt.screenHeightWithUrlBar ??= window.innerHeight; let e = SR7.F?.modal?.visible && SR7.M[SR7.F.module.getIdByAlias(SR7.F.modal.requested)]; _tpt.scrollBar = window.innerWidth !== document.documentElement.clientWidth || e && window.innerWidth !== e.c.module.clientWidth, _tpt.winW = window.innerWidth - (_tpt.scrollBar || "prepare" == t ? _tpt.scrollBarW ?? _tpt.mesureScrollBar() : 0), _tpt.winH = window.innerHeight, _tpt.winWAll = document.documentElement.clientWidth }, _tpt.getResponsiveLevel = function (t, e) { SR7.M[e]; return _tpt.closestGE(t, _tpt.winWAll) }, _tpt.mesureScrollBar = function () { let t = document.createElement("div"); return t.className = "RSscrollbar-measure", t.style.width = "100px", t.style.height = "100px", t.style.overflow = "scroll", t.style.position = "absolute", t.style.top = "-9999px", document.body.appendChild(t), _tpt.scrollBarW = t.offsetWidth - t.clientWidth, document.body.removeChild(t), _tpt.scrollBarW }, _tpt.loadCSS = async function (t, e, s) { return s ? _tpt.R.fonts.required[e].status = 1 : (_tpt.R[e] ??= {}, _tpt.R[e].status = 1), new Promise(((n, i) => { if (_tpt.isStylesheetLoaded(t)) s ? _tpt.R.fonts.required[e].status = 2 : _tpt.R[e].status = 2, n(); else { const l = document.createElement("link"); l.rel = "stylesheet"; let o = "text", r = "css"; l["type"] = o + "/" + r, l.href = t, l.onload = () => { s ? _tpt.R.fonts.required[e].status = 2 : _tpt.R[e].status = 2, n() }, l.onerror = () => { s ? _tpt.R.fonts.required[e].status = 3 : _tpt.R[e].status = 3, i(new Error(`Failed to load CSS: ${t}`)) }, document.head.appendChild(l) } })) }, _tpt.addContainer = function (t) { const { tag: e = "div", id: s, class: n, datas: i, textContent: l, iHTML: o } = t, r = document.createElement(e); if (s && "" !== s && (r.id = s), n && "" !== n && (r.className = n), i) for (const [t, e] of Object.entries(i)) "style" == t ? r.style.cssText = e : r.setAttribute(`data-${t}`, e); return l && (r.textContent = l), o && (r.innerHTML = o), r }, _tpt.collector = function () { return { fragment: new DocumentFragment, add(t) { var e = _tpt.addContainer(t); return this.fragment.appendChild(e), e }, append(t) { t.appendChild(this.fragment) } } }, _tpt.isStylesheetLoaded = function (t) { let e = t.split("?")[0]; return Array.from(document.querySelectorAll('link[rel="stylesheet"], link[rel="preload"]')).some((t => t.href.split("?")[0] === e)) }, _tpt.preloader = { requests: new Map, preloaderTemplates: new Map, show: function (t, e) { if (!e || !t) return; const { type: s, color: n } = e; if (s < 0 || "off" == s) return; const i = `preloader_${s}`; let l = this.preloaderTemplates.get(i); l || (l = this.build(s, n), this.preloaderTemplates.set(i, l)), this.requests.has(t) || this.requests.set(t, { count: 0 }); const o = this.requests.get(t); clearTimeout(o.timer), o.count++, 1 === o.count && (o.timer = setTimeout((() => { o.preloaderClone = l.cloneNode(!0), o.anim && o.anim.kill(), void 0 !== _tpt.gsap ? o.anim = _tpt.gsap.fromTo(o.preloaderClone, 1, { opacity: 0 }, { opacity: 1 }) : o.preloaderClone.classList.add("sr7-fade-in"), t.appendChild(o.preloaderClone) }), 150)) }, hide: function (t) { if (!this.requests.has(t)) return; const e = this.requests.get(t); e.count--, e.count < 0 && (e.count = 0), e.anim && e.anim.kill(), 0 === e.count && (clearTimeout(e.timer), e.preloaderClone && (e.preloaderClone.classList.remove("sr7-fade-in"), e.anim = _tpt.gsap.to(e.preloaderClone, .3, { opacity: 0, onComplete: function () { e.preloaderClone.remove() } }))) }, state: function (t) { if (!this.requests.has(t)) return !1; return this.requests.get(t).count > 0 }, build: (t, e = "#ffffff", s = "") => { if (t < 0 || "off" === t) return null; const n = parseInt(t); if (t = "prlt" + n, isNaN(n)) return null; if (_tpt.loadCSS(SR7.E.plugin_url + "public/css/preloaders/t" + n + ".css", "preloader_" + t), isNaN(n) || n < 6) { const i = `background-color:${e}`, l = 1 === n || 2 == n ? i : "", o = 3 === n || 4 == n ? i : "", r = _tpt.collector();["dot1", "dot2", "bounce1", "bounce2", "bounce3"].forEach((t => r.add({ tag: "div", class: t, datas: { style: o } }))); const d = _tpt.addContainer({ tag: "sr7-prl", class: `${t} ${s}`, datas: { style: l } }); return r.append(d), d } { let i = {}; if (7 === n) { let t; e.startsWith("#") ? (t = e.replace("#", ""), t = `rgba(${parseInt(t.substring(0, 2), 16)}, ${parseInt(t.substring(2, 4), 16)}, ${parseInt(t.substring(4, 6), 16)}, `) : e.startsWith("rgb") && (t = e.slice(e.indexOf("(") + 1, e.lastIndexOf(")")).split(",").map((t => t.trim())), t = `rgba(${t[0]}, ${t[1]}, ${t[2]}, `), t && (i.style = `border-top-color: ${t}0.65); border-bottom-color: ${t}0.15); border-left-color: ${t}0.65); border-right-color: ${t}0.15)`) } else 12 === n && (i.style = `background:${e}`); const l = [10, 0, 4, 2, 5, 9, 0, 4, 4, 2][n - 6], o = _tpt.collector(), r = o.add({ tag: "div", class: "sr7-prl-inner", datas: i }); Array.from({ length: l }).forEach((() => r.appendChild(o.add({ tag: "span", datas: { style: `background:${e}` } })))); const d = _tpt.addContainer({ tag: "sr7-prl", class: `${t} ${s}` }); return o.append(d), d } } }, SR7.preLoader = { show: (t, e) => { "off" !== (SR7.M[t]?.settings?.pLoader?.type ?? "off") && _tpt.preloader.show(e || SR7.M[t].c.module, SR7.M[t]?.settings?.pLoader ?? { color: "#fff", type: 10 }) }, hide: (t, e) => { "off" !== (SR7.M[t]?.settings?.pLoader?.type ?? "off") && _tpt.preloader.hide(e || SR7.M[t].c.module) }, state: (t, e) => _tpt.preloader.state(e || SR7.M[t].c.module) }, _tpt.prepareModuleHeight = function (t) { window.SR7.M ??= {}, window.SR7.M[t.id] ??= {}, "ignore" == t.googleFont && (SR7.E.ignoreGoogleFont = !0); let e = window.SR7.M[t.id]; if (null == _tpt.scrollBarW && _tpt.mesureScrollBar(), e.c ??= {}, e.states ??= {}, e.settings ??= {}, e.settings.size ??= {}, t.fixed && (e.settings.fixed = !0), e.c.module = document.getElementById(t.id), e.c.adjuster = e.c.module.getElementsByTagName("sr7-adjuster")[0], e.c.content = e.c.module.getElementsByTagName("sr7-content")[0], "carousel" == t.type && (e.c.carousel = e.c.content.getElementsByTagName("sr7-carousel")[0]), null == e.c.module || null == e.c.module) return; t.plType && t.plColor && (e.settings.pLoader = { type: t.plType, color: t.plColor }), void 0 !== t.plType && "off" !== t.plType && SR7.preLoader.show(t.id, e.c.module), _tpt.winW || _tpt.getWinDim("prepare"), _tpt.getWinDim(); let s = "" + e.c.module.dataset?.modal; "modal" == s || "true" == s || "undefined" !== s && "false" !== s || (e.settings.size.fullWidth = t.size.fullWidth, e.LEV ??= _tpt.getResponsiveLevel(window.SR7.G.breakPoints, t.id), t.vpt = _tpt.fillArray(t.vpt, 5), e.settings.vPort = t.vpt[e.LEV], void 0 !== t.el && "720" == t.el[4] && t.gh[4] !== t.el[4] && "960" == t.el[3] && t.gh[3] !== t.el[3] && "768" == t.el[2] && t.gh[2] !== t.el[2] && delete t.el, e.settings.size.height = null == t.el || null == t.el[e.LEV] || 0 == t.el[e.LEV] || "auto" == t.el[e.LEV] ? _tpt.fillArray(t.gh, 5, -1) : _tpt.fillArray(t.el, 5, -1), e.settings.size.width = _tpt.fillArray(t.gw, 5, -1), e.settings.size.minHeight = _tpt.fillArray(t.mh ?? [0], 5, -1), e.cacheSize = { fullWidth: e.settings.size?.fullWidth, fullHeight: e.settings.size?.fullHeight }, void 0 !== t.off && (t.off?.t && (e.settings.size.m ??= {}) && (e.settings.size.m.t = t.off.t), t.off?.b && (e.settings.size.m ??= {}) && (e.settings.size.m.b = t.off.b), t.off?.l && (e.settings.size.p ??= {}) && (e.settings.size.p.l = t.off.l), t.off?.r && (e.settings.size.p ??= {}) && (e.settings.size.p.r = t.off.r), e.offsetPrepared = !0), _tpt.updatePMHeight(t.id, t, !0)) }, _tpt.updatePMHeight = (t, e, s) => { let n = SR7.M[t]; var i = n.settings.size.fullWidth ? _tpt.winW : n.c.module.parentNode.offsetWidth; i = 0 === i || isNaN(i) ? _tpt.winW : i; let l = n.settings.size.width[n.LEV] || n.settings.size.width[n.LEV++] || n.settings.size.width[n.LEV--] || i, o = n.settings.size.height[n.LEV] || n.settings.size.height[n.LEV++] || n.settings.size.height[n.LEV--] || 0, r = n.settings.size.minHeight[n.LEV] || n.settings.size.minHeight[n.LEV++] || n.settings.size.minHeight[n.LEV--] || 0; if (o = "auto" == o ? 0 : o, o = parseInt(o), "carousel" !== e.type && (i -= parseInt(e.onw ?? 0) || 0), n.MP = !n.settings.size.fullWidth && i < l || _tpt.winW < l ? Math.min(1, i / l) : 1, e.size.fullScreen || e.size.fullHeight) { let t = parseInt(e.fho) || 0, s = ("" + e.fho).indexOf("%") > -1; e.newh = _tpt.winH - (s ? _tpt.winH * t / 100 : t) } else e.newh = n.MP * Math.max(o, r); if (e.newh += (parseInt(e.onh ?? 0) || 0) + (parseInt(e.carousel?.pt) || 0) + (parseInt(e.carousel?.pb) || 0), void 0 !== e.slideduration && (e.newh = Math.max(e.newh, parseInt(e.slideduration) / 3)), e.shdw && _tpt.buildShadow(e.id, e), n.c.adjuster.style.height = e.newh + "px", n.c.module.style.height = e.newh + "px", n.c.content.style.height = e.newh + "px", n.states.heightPrepared = !0, n.dims ??= {}, n.dims.moduleRect = n.c.module.getBoundingClientRect(), n.c.content.style.left = "-" + n.dims.moduleRect.left + "px", !n.settings.size.fullWidth) return s && requestAnimationFrame((() => { i !== n.c.module.parentNode.offsetWidth && _tpt.updatePMHeight(e.id, e) })), void _tpt.bgStyle(e.id, e, window.innerWidth == _tpt.winW, !0); _tpt.bgStyle(e.id, e, window.innerWidth == _tpt.winW, !0), requestAnimationFrame((function () { s && requestAnimationFrame((() => { i !== n.c.module.parentNode.offsetWidth && _tpt.updatePMHeight(e.id, e) })) })), n.earlyResizerFunction || (n.earlyResizerFunction = function () { requestAnimationFrame((function () { _tpt.getWinDim(), _tpt.moduleDefaults(e.id, e), _tpt.updateSlideBg(t, !0) })) }, window.addEventListener("resize", n.earlyResizerFunction)) }, _tpt.buildShadow = function (t, e) { let s = SR7.M[t]; null == s.c.shadow && (s.c.shadow = document.createElement("sr7-module-shadow"), s.c.shadow.classList.add("sr7-shdw-" + e.shdw), s.c.content.appendChild(s.c.shadow)) }, _tpt.bgStyle = async (t, e, s, n, i) => { const l = SR7.M[t]; if ((e = e ?? l.settings).fixed && !l.c.module.classList.contains("sr7-top-fixed") && (l.c.module.classList.add("sr7-top-fixed"), l.c.module.style.position = "fixed", l.c.module.style.width = "100%", l.c.module.style.top = "0px", l.c.module.style.left = "0px", l.c.module.style.pointerEvents = "none", l.c.module.style.zIndex = 5e3, l.c.content.style.pointerEvents = "none"), null == l.c.bgcanvas) { let t = document.createElement("sr7-module-bg"), o = !1; if ("string" == typeof e?.bg?.color && e?.bg?.color.includes("{")) if (_tpt.gradient && _tpt.gsap) e.bg.color = _tpt.gradient.convert(e.bg.color); else try { let t = JSON.parse(e.bg.color); (t?.orig || t?.string) && (e.bg.color = JSON.parse(e.bg.color)) } catch (t) { return } let r = "string" == typeof e?.bg?.color ? e?.bg?.color || "transparent" : e?.bg?.color?.string ?? e?.bg?.color?.orig ?? e?.bg?.color?.color ?? "transparent"; if (t.style["background" + (String(r).includes("grad") ? "" : "Color")] = r, ("transparent" !== r || i) && (o = !0), l.offsetPrepared && (t.style.visibility = "hidden"), e?.bg?.image?.src && (t.style.backgroundImage = `url(${e?.bg?.image.src})`, t.style.backgroundSize = "" == (e.bg.image?.size ?? "") ? "cover" : e.bg.image.size, t.style.backgroundPosition = e.bg.image.position, t.style.backgroundRepeat = "" == e.bg.image.repeat || null == e.bg.image.repeat ? "no-repeat" : e.bg.image.repeat, o = !0), !o) return; l.c.bgcanvas = t, e.size.fullWidth ? t.style.width = _tpt.winW - (s && _tpt.winH < document.body.offsetHeight ? _tpt.scrollBarW : 0) + "px" : n && (t.style.width = l.c.module.offsetWidth + "px"), e.sbt?.use ? l.c.content.appendChild(l.c.bgcanvas) : l.c.module.appendChild(l.c.bgcanvas) } l.c.bgcanvas.style.height = void 0 !== e.newh ? e.newh + "px" : ("carousel" == e.type ? l.dims.module.h : l.dims.content.h) + "px", l.c.bgcanvas.style.left = !s && e.sbt?.use || l.c.bgcanvas.closest("SR7-CONTENT") ? "0px" : "-" + (l?.dims?.moduleRect?.left ?? 0) + "px" }, _tpt.updateSlideBg = function (t, e) { const s = SR7.M[t]; let n = s.settings; s?.c?.bgcanvas && (n.size.fullWidth ? s.c.bgcanvas.style.width = _tpt.winW - (e && _tpt.winH < document.body.offsetHeight ? _tpt.scrollBarW : 0) + "px" : preparing && (s.c.bgcanvas.style.width = s.c.module.offsetWidth + "px")) }, _tpt.moduleDefaults = (t, e) => { let s = SR7.M[t]; null != s && null != s.c && null != s.c.module && (s.dims ??= {}, s.dims.moduleRect = s.c.module.getBoundingClientRect(), s.c.content.style.left = "-" + s.dims.moduleRect.left + "px", s.c.content.style.width = _tpt.winW - _tpt.scrollBarW + "px", "carousel" == e.type && (s.c.module.style.overflow = "visible"), _tpt.bgStyle(t, e, window.innerWidth == _tpt.winW)) }, _tpt.getOffset = t => { var e = t.getBoundingClientRect(), s = window.pageXOffset || document.documentElement.scrollLeft, n = window.pageYOffset || document.documentElement.scrollTop; return { top: e.top + n, left: e.left + s } }, _tpt.fillArray = function (t, e) {
-				let s, n; t = Array.isArray(t) ? t : [t]; let i = Array(e), l = t.length; for (n = 0; n < t.length; n++)i[n + (e - l)] = t[n], null == s && "#" !== t[n] && (s = t[n]); for (let t = 0; t < e; t++)void 0 !== i[t] && "#" != i[t] || (i[t] = s), s = i[t]; return i
-			}, _tpt.closestGE = function (t, e) {
-				let s = Number.MAX_VALUE, n = -1; for (let i = 0; i < t.length; i++)t[i] - 1 >= e && t[i] - 1 - e < s && (s = t[i] - 1 - e, n = i); return ++n
-			}
-		}();</script>
 	<style>
 		.elementor-21 .elementor-element.elementor-element-74816a3:not(.elementor-motion-effects-element-type-background),
 		.elementor-21 .elementor-element.elementor-element-74816a3>.elementor-motion-effects-container>.elementor-motion-effects-layer {
@@ -617,163 +577,210 @@
 					<div class="qodef-grid-inner">
 						<div class="qodef-grid-item qodef-page-content-section qodef-col--content">
 							<div data-elementor-type="wp-page" data-elementor-id="21" class="elementor elementor-21">
-								<div class="elementor-element elementor-element-74816a3 e-con-full e-flex e-con e-parent"
-									data-id="74816a3" data-element_type="container"
-									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-									<div class="elementor-element elementor-element-f5f33ed elementor-widget elementor-widget-slider_revolution"
-										data-id="f5f33ed" data-element_type="widget"
-										data-widget_type="slider_revolution.default">
-										<div class="elementor-widget-container">
+								<!-- Custom Hero Section -->
+								<style>
+									/* Hero Section Styles */
+									.custom-hero {
+										position: relative;
+										width: 100%;
+										height: 100vh;
+										min-height: 600px;
+										overflow: hidden;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+									}
 
-											<div class="wp-block-themepunch-revslider">
-												<p class="rs-p-wp-fix"></p>
-												<sr7-module data-alias="main-home" data-id="1" id="SR7_1_1"
-													class="rs-ov-hidden" data-version="6.7.20">
-													<sr7-adjuster></sr7-adjuster>
-													<sr7-content>
-														<sr7-slide id="SR7_1_1-7" data-key="7">
-															<sr7-bg id="SR7_1_1-7-10" class="sr7-layer"><noscript><img
-																		decoding="async"
-																		src="wp-content/uploads/2024/04/h1-img-1.jpg"
-																		alt="k" title="h1-img-1"></noscript></sr7-bg>
-															<sr7-img id="SR7_1_1-7-0" class="sr7-layer"><noscript><img
-																		decoding="async"
-																		src="wp-content/uploads/2024/04/logo-light.png"
-																		alt="logo"
-																		title="logo-light"></noscript></sr7-img>
-															<sr7-txt id="SR7_1_1-7-1" class="sr7-layer">Frische
-																Lebensmittel,
-																direkt zu Ihnen</sr7-txt>
-															<sr7-txt id="SR7_1_1-7-2" class="sr7-layer"><a
-																	class="qodef-shortcode qodef-m  qodef-button qodef-layout--filled qodef-show-button-arrow--yes  qodef-html--link"
-																	href="#produkte" target="_self"
-																	style="background-color: white; color: #1E1E1E;">
-																	<span class="qodef-m-text"
-																		data-title="Unsere Produkte ansehen">Unsere
-																		Produkte ansehen</span>
-																	<span class="qodef-btn-arrow"><svg
-																			class="qodef-svg--button-arrow-standard"
-																			xmlns="http://www.w3.org/2000/svg"
-																			width="18.476" height="18.044"
-																			viewBox="0 0 18.476 18.044">
-																			<g
-																				transform="translate(9.007 0.992) rotate(45)">
-																				<path d="M0,11.312,11.377,0"
-																					transform="translate(0 0.011)"
-																					fill="none" stroke="currentColor"
-																					stroke-width="2" />
-																				<path d="M8.466,8.661V0H0"
-																					transform="translate(2.925 0)"
-																					fill="none" stroke="currentColor"
-																					stroke-width="2" />
-																			</g>
-																		</svg></span>
-																</a>
-															</sr7-txt>
-														</sr7-slide>
-														<sr7-slide id="SR7_1_1-8" data-key="8">
-															<sr7-bg id="SR7_1_1-8-6" class="sr7-layer"><noscript><img
-																		decoding="async"
-																		src="wp-content/uploads/2024/06/h1-img-6.jpg"
-																		alt="D" title="h1-img-6"></noscript></sr7-bg>
-															<sr7-txt id="SR7_1_1-8-4" class="sr7-layer">Package Delivery
-																News</sr7-txt>
-															<sr7-txt id="SR7_1_1-8-5" class="sr7-layer"><a
-																	class="qodef-shortcode qodef-m  qodef-button qodef-layout--filled qodef-show-button-arrow--yes  qodef-html--link"
-																	href="#produkte" target="_self"
-																	style="background-color: white; color: #1E1E1E;">
-																	<span class="qodef-m-text"
-																		data-title="Unsere Produkte ansehen">Unsere
-																		Produkte ansehen</span>
-																	<span class="qodef-btn-arrow"><svg
-																			class="qodef-svg--button-arrow-standard"
-																			xmlns="http://www.w3.org/2000/svg"
-																			width="18.476" height="18.044"
-																			viewBox="0 0 18.476 18.044">
-																			<g
-																				transform="translate(9.007 0.992) rotate(45)">
-																				<path d="M0,11.312,11.377,0"
-																					transform="translate(0 0.011)"
-																					fill="none" stroke="currentColor"
-																					stroke-width="2" />
-																				<path d="M8.466,8.661V0H0"
-																					transform="translate(2.925 0)"
-																					fill="none" stroke="currentColor"
-																					stroke-width="2" />
-																			</g>
-																		</svg></span>
-																</a>
-															</sr7-txt>
-														</sr7-slide>
-														<sr7-slide id="SR7_1_1-9" data-key="9">
-															<sr7-bg id="SR7_1_1-9-9" class="sr7-layer"><noscript><img
-																		decoding="async"
-																		src="wp-content/uploads/2024/06/h1-img-7.jpg"
-																		alt="" title="h1-img-7"></noscript></sr7-bg>
-															<sr7-txt id="SR7_1_1-9-7" class="sr7-layer">Reliable Service
-																Transport </sr7-txt>
-															<sr7-txt id="SR7_1_1-9-8" class="sr7-layer"><a
-																	class="qodef-shortcode qodef-m  qodef-button qodef-layout--filled qodef-show-button-arrow--yes  qodef-html--link"
-																	href="#produkte" target="_self"
-																	style="background-color: white; color: #1E1E1E;">
-																	<span class="qodef-m-text"
-																		data-title="Unsere Produkte ansehen">Unsere
-																		Produkte ansehen</span>
-																	<span class="qodef-btn-arrow"><svg
-																			class="qodef-svg--button-arrow-standard"
-																			xmlns="http://www.w3.org/2000/svg"
-																			width="18.476" height="18.044"
-																			viewBox="0 0 18.476 18.044">
-																			<g
-																				transform="translate(9.007 0.992) rotate(45)">
-																				<path d="M0,11.312,11.377,0"
-																					transform="translate(0 0.011)"
-																					fill="none" stroke="currentColor"
-																					stroke-width="2" />
-																				<path d="M8.466,8.661V0H0"
-																					transform="translate(2.925 0)"
-																					fill="none" stroke="currentColor"
-																					stroke-width="2" />
-																			</g>
-																		</svg></span>
-																</a>
-															</sr7-txt>
-														</sr7-slide>
-														<sr7-slide id="SR7_1_1-13" data-key="13">
-														</sr7-slide>
-													</sr7-content>
-													<image_lists style="display:none">
-														<img data-src="wp-content/uploads/2024/04/logo-light.png"
-															data-libid="5309" data-lib="medialibrary" alt="s"
-															title="logo-light" width="0" height="0" data-dbsrc="" />
-														<img data-src="wp-content/uploads/2024/07/video-mainhome.mp4"
-															width="0" height="0"
-															data-dbsrc="Ly9mcmVpZ2h0ZXhwcmVzcy5xb2RlaW50ZXJhY3RpdmUuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI0LzA3L3ZpZGVvLW1haW5ob21lLm1wNA==" />
-														<img data-src="wp-content/uploads/2024/04/h1-img-1.jpg"
-															data-libid="25" data-lib="medialibrary" alt="k"
-															title="h1-img-1" width="0" height="0"
-															data-dbsrc="Ly9mcmVpZ2h0ZXhwcmVzcy5xb2RlaW50ZXJhY3RpdmUuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI0LzA0L2gxLWltZy0xLmpwZw==" />
-														<img loading="lazy" loading="lazy"
-															data-src="wp-content/uploads/2024/06/h1-img-6.jpg"
-															data-libid="4827" data-lib="medialibrary" alt="D"
-															title="h1-img-6" width="0" height="0"
-															data-dbsrc="Ly9mcmVpZ2h0ZXhwcmVzcy5xb2RlaW50ZXJhY3RpdmUuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI0LzA2L2gxLWltZy02LmpwZw==" />
-														<img loading="lazy" loading="lazy"
-															data-src="wp-content/uploads/2024/06/h1-img-7.jpg"
-															data-libid="4828" data-lib="medialibrary" title="h1-img-7"
-															width="0" height="0"
-															data-dbsrc="Ly9mcmVpZ2h0ZXhwcmVzcy5xb2RlaW50ZXJhY3RpdmUuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI0LzA2L2gxLWltZy03LmpwZw==" />
-													</image_lists>
-												</sr7-module>
-												<script>
-													SR7.PMH ??= {}; SR7.PMH["SR7_1_1"] = { cn: 0, state: false, fn: function () { if (_tpt !== undefined && _tpt.prepareModuleHeight !== undefined) { _tpt.prepareModuleHeight({ id: "SR7_1_1", el: [900, 900, 768, 960, 720], type: 'standard', shdw: '0', gh: [900, 900, 768, 800, 720], gw: [1240, 1240, 1024, 778, 480], vpt: ['100px&#039;,&#039;100px&#039;,&#039;100px&#039;,&#039;100px&#039;,&#039;100px'], size: { fullWidth: true, fullHeight: true }, fho: ',', mh: '0', onh: 135, onw: 0, bg: { color: '{"orig":"transparent","type":"solid","string":"transparent"}' } }); SR7.PMH["SR7_1_1"].state = true; } else if ((SR7.PMH["SR7_1_1"].cn++) < 100) setTimeout(SR7.PMH["SR7_1_1"].fn, 19); } }; SR7.PMH["SR7_1_1"].fn();
-												</script>
-											</div>
+									.custom-hero__video {
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										min-width: 100%;
+										min-height: 100%;
+										width: auto;
+										height: auto;
+										transform: translate(-50%, -50%);
+										object-fit: cover;
+										z-index: 0;
+									}
 
+									.custom-hero__overlay {
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+										background: rgba(0, 0, 0, 0.3);
+										z-index: 1;
+									}
+
+									.custom-hero__content {
+										position: relative;
+										z-index: 2;
+										text-align: center;
+										padding: 20px;
+										max-width: 1400px;
+										margin: 0 auto;
+									}
+
+									.custom-hero__logo {
+										width: 192px;
+										height: auto;
+										margin: 0 auto 40px;
+										opacity: 0;
+										animation: fadeInUp 1.2s ease forwards;
+										animation-delay: 0.3s;
+									}
+
+									.custom-hero__title {
+										font-family: 'Inter Tight', sans-serif;
+										font-size: 60px;
+										font-weight: 600;
+										line-height: 1.2;
+										color: #ffffff;
+										margin: 0 0 40px;
+										opacity: 0;
+										animation: fadeInUp 1.5s ease forwards;
+										animation-delay: 0.6s;
+									}
+
+									.custom-hero__cta {
+										opacity: 0;
+										animation: fadeInUp 1s ease forwards;
+										animation-delay: 1s;
+									}
+
+									/* Button Styles */
+									.custom-hero__button {
+										display: inline-flex;
+										align-items: center;
+										gap: 12px;
+										padding: 18px 36px;
+										background-color: #ffffff;
+										color: #1E1E1E;
+										font-family: 'Inter Tight', sans-serif;
+										font-size: 16px;
+										font-weight: 600;
+										text-decoration: none;
+										border-radius: 0;
+										transition: all 0.3s ease;
+										position: relative;
+										overflow: hidden;
+									}
+
+									.custom-hero__button:hover {
+										background-color: #f5f5f5;
+										transform: translateY(-2px);
+										box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+									}
+
+									.custom-hero__button svg {
+										width: 18px;
+										height: 18px;
+										transition: transform 0.3s ease;
+									}
+
+									.custom-hero__button:hover svg {
+										transform: translateX(4px);
+									}
+
+									/* Animations */
+									@keyframes fadeInUp {
+										from {
+											opacity: 0;
+											transform: translateY(30px);
+										}
+
+										to {
+											opacity: 1;
+											transform: translateY(0);
+										}
+									}
+
+									/* Responsive Design */
+									@media only screen and (max-width: 1024px) {
+										.custom-hero__title {
+											font-size: 40px;
+										}
+
+										.custom-hero__logo {
+											width: 172px;
+											margin-bottom: 30px;
+										}
+									}
+
+									@media only screen and (max-width: 778px) {
+										.custom-hero__title {
+											font-size: 35px;
+										}
+
+										.custom-hero__logo {
+											width: 160px;
+										}
+
+										.custom-hero {
+											min-height: 500px;
+										}
+									}
+
+									@media only screen and (max-width: 480px) {
+										.custom-hero__title {
+											font-size: 30px;
+											line-height: 1.3;
+										}
+
+										.custom-hero__logo {
+											width: 140px;
+											margin-bottom: 25px;
+										}
+
+										.custom-hero__button {
+											padding: 14px 28px;
+											font-size: 14px;
+										}
+									}
+								</style>
+
+								<section class="custom-hero" aria-label="Hero Section">
+									<!-- Video Background -->
+									<video class="custom-hero__video" autoplay loop muted playsinline
+										poster="wp-content/uploads/2024/04/h1-img-1.jpg">
+										<source src="assets/video/Animatedherosection2.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+
+									<!-- Overlay -->
+									<div class="custom-hero__overlay"></div>
+
+									<!-- Content -->
+									<div class="custom-hero__content">
+										<!-- Logo -->
+										<img src="wp-content/uploads/2024/04/logo-light.png" alt="Importiny Logo"
+											class="custom-hero__logo" width="192" height="67">
+
+										<!-- Title -->
+										<h1 class="custom-hero__title">
+											Frische Lebensmittel,<br>direkt zu Ihnen
+										</h1>
+
+										<!-- CTA Button -->
+										<div class="custom-hero__cta">
+											<a href="#produkte" class="custom-hero__button"
+												aria-label="Unsere Produkte ansehen">
+												<span>Unsere Produkte ansehen</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="18.476" height="18.044"
+													viewBox="0 0 18.476 18.044" aria-hidden="true">
+													<g transform="translate(9.007 0.992) rotate(45)">
+														<path d="M0,11.312,11.377,0" transform="translate(0 0.011)"
+															fill="none" stroke="currentColor" stroke-width="2" />
+														<path d="M8.466,8.661V0H0" transform="translate(2.925 0)"
+															fill="none" stroke="currentColor" stroke-width="2" />
+													</g>
+												</svg>
+											</a>
 										</div>
 									</div>
-								</div>
-
+								</section>
 
 
 								<div id="produkte"
@@ -2658,13 +2665,6 @@
 	<script type="text/javascript"
 		src="wp-content/plugins/ImportExport-core/inc/plugins/elementor/assets/js/elementor.min%EF%B9%96ver=6.8.3.js"
 		id="ImportExport-core-elementor-js"></script>
-	<script>
-		SR7.JSON['SR7_1_1'] = { "settings": { "migrated": "sr6", "uSize": [false, true, true, true, true], "title": "Main home", "alias": "main-home", "type": "standard", "fonts": { "'Inter+Tight'": { "name": "'Inter Tight'", "normal": { "600": true }, "subset": { "latin": true } }, "Roboto": { "name": "Roboto", "normal": { "400": true }, "subset": { "latin": true } } }, "vPort": ["100px", "100px", "100px", "100px", "100px"], "size": { "fullHeight": true, "fullHeightOffset": ",", "contentFH": true, "width": [1240, 1240, 1024, 778, 480], "height": [900, 900, 768, "800px", 720], "cachedHeight": [900, 900, 768, 960, 720], "maxWidth": 0 }, "default": { "linearStyle": false, "linearPosition": false, "linearSpace": false, "linearAlien": false, "len": "3500ms" }, "carousel": { "type": "h", "align": "center", "maxV": 3, "justify": false, "scale": false, "minS": 50, "vScale": false, "oScale": false, "space": 0, "rotation": false, "maxR": 0, "varR": false, "opacity": true, "maxO": 100, "varO": false, "spin": "off", "spinA": 0, "snap": true, "infinity": false, "skewX": 0, "skewY": 0, "ease": "power3.inOut", "dur": 800, "overshoot": false, "stretch": false, "showAllLayers": "false", "jMWidth": false, "bR": 0, "bRU": "px", "pNV": "50px", "pT": 0, "pB": 0 }, "shdw": 0, "bg": { "color": { "orig": "transparent", "type": "solid", "string": "transparent" } }, "nav": { "p": { "w": 50, "h": 100 }, "tabs": { "set": false, "def": "", "cst": [], "key": "ImportExport_tabs", "t": "2", "css": ".ImportExport_tabs.sr7-tabs {\n    counter-reset: section;\n}\n\n.ImportExport_tabs .sr7-tab {\n    width: 150px !important;\n    height: 150px !important;\n    border: 1px solid #D1D1D1;\n    opacity: 1 !important;\n    text-align: left;\n  \n    @media only screen and (max-width: 1024px) {\n        width: 120px !important;\n        height: 120px !important;\n    }\n}\n\n.ImportExport_tabs .sr7-tab-inner {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(255,255,255,0);\n    transition: all 0.4s ease-in-out;\n}\n\n.ImportExport_tabs .sr7-tab-inner:after {\n    position: absolute;\n    top: 8px;\n    right: 12px;\n    counter-increment: section;\n    content: \"0\" counter(section);\n    font-family: \"Inter Tight\", sans-serif;\n    font-size: 18px;\n    line-height: 21px;\n    letter-spacing: 0;\n    font-weight: 600;\n    color: #FFFFFF;\n    opacity: 0.7;\n    transition: all 0.4s ease-in-out;\n}\n\n.ImportExport_tabs .sr7-tab-title {\n    position: absolute;\n    bottom: 8px;\n    left: 12px;\n    font-size: 18px;\n    font-weight: 600;\n    color: #FFFFFF;\n    line-height: 21px;\n    font-family: \"Inter Tight\", sans-serif;\n    word-spacing: 150px;\n  \topacity: 0.7;\n    transition: all 0.4s ease-in-out;\n}\n\n.ImportExport_tabs .sr7-tab.selected .sr7-tab-inner {\n    -webkit-backdrop-filter: blur(30px) brightness(115%);\n    backdrop-filter: blur(30px) brightness(115%);\n}\n\n.ImportExport_tabs .sr7-tab.selected .sr7-tab-inner:after {\n    opacity: 1;\n}\n\n.ImportExport_tabs .sr7-tab.selected .sr7-tab-title {\n    opacity: 1;\n}", "html": "<div class=\"sr7-tab-inner\">\n    <div class=\"sr7-tab-title\">\n        {{param1}}\n    <\/div>\n<\/div>", "on": true, "d": ["#a", "horizontal", "#a", "#a", "#a"], "s": 1000, "dIn": ["#a", 1000, "#a", "#a", "#a"], "dOut": ["#a", 200, "#a", "#a", 1200], "io": "i", "show": [true, true, true, true, false], "g": 20, "a": "slider", "anim": "fade", "x": ["#a", "0", "#a", "#a", "#a"], "y": ["#a", "30", "#a", "#a", "#a"], "v": ["#a", "bottom", "#a", "#a", "#a"], "h": ["#a", "center", "#a", "#a", "#a"], "m": ["#a", 10, "#a", "#a", "#a"], "size": { "w": [150, 150, 140, 130, 120], "h": [150, 150, 140, 130, 120], "nw": 150, "nh": 150, "mw": 120, "t": 0 }, "wr": { "c": "transparent", "p": ["#a", 5, "#a", "#a", "#a"], "s": false, "mx": ["#a", 0, "#a", "#a", "#a"], "my": ["#a", 0, "#a", "#a", "#a"] } } }, "thumb": "assets\/img\/ship-globe-tunisia-germany.png", "aU": [], "imgs": [{ "lib_id": 5309, "lib": "medialibrary", "src": "wp-content\/uploads\/2024\/04\/logo-dark.png" }, { "src": "assets\/img\/ship-globe-tunisia-germany.png" }, { "lib_id": 25, "lib": "medialibrary", "src": "assets\/img\/ship-globe-tunisia-germany.png" }, { "lib_id": 4827, "lib": "medialibrary", "src": "https:\/\/freightexpress.qodeinteractive.com\/wp-content\/uploads\/2024\/06\/h1-img-6.jpg" }, { "lib_id": 4828, "lib": "medialibrary", "src": "https:\/\/freightexpress.qodeinteractive.com\/wp-content\/uploads\/2024\/06\/h1-img-7.jpg" }], "version": "6.7.14", "general": { "lazyLoad": "smart", "slideshow": { "globalViewPort": "true", "globalViewDist": "-200px" } } }, "slides": { "7": { "id": 7, "slide": { "addOns": [], "id": 7, "version": "6.7.13", "title": "", "parentId": null, "language": "default", "order": 1, "thumb": { "src": "assets\/img\/ship-globe-tunisia-germany.png", "srcId": "", "admin": "", "adminId": "", "dimension": "slider", "default": { "image": { "src": "assets\/img\/ship-globe-tunisia-germany.png", "repeat": "", "size": "cover", "pos": { "x": "50%", "y": "50%" } } } }, "description": "", "attr": { "class": "", "data": "", "id": "", "a": "", "aO": "ml", "t": "", "tO": "", "deepLink": "", "attr": "" }, "publish": { "from": "", "to": "", "state": "" }, "slideshow": { "stop": false, "len": "default", "hal": 0, "hom": false, "hfn": false }, "loop": { "u": false, "r": -1, "s": 0, "e": 99999 }, "params": [{ "v": "Transport", "l": "20" }] }, "layers": { "0": { "rTo": "slide", "id": 0, "alias": "Image-0", "content": { "src": "wp-content\/uploads\/2024\/04\/logo-light.png", "lib": "medialibrary", "lib_id": 5309 }, "size": { "w": ["192px", "192px", "192px", "172px", "172px"], "h": ["67px", "67px", "67px", "60px", "60px"], "minW": ["none", "none", "none", "none", "none"], "minH": ["none", "none", "none", "none", "none"], "sProp": true }, "pos": { "x": ["auto", "auto", "auto", "auto", "auto"], "y": ["-120px", "-120px", "-88px", "-118px", "-85px"], "h": ["center", "center", "center", "center", "center"], "v": ["middle", "middle", "middle", "middle", "middle"], "pos": "absolute", "float": ["none", "none", "none", "none", "none"], "clear": ["none", "none", "none", "none", "none"] }, "zIndex": 8, "order": 8, "display": ["block", "block", "block", "block", "block"], "vA": "top", "bg": { "color": { "orig": "transparent", "type": "solid", "string": "transparent" } }, "attr": { "aO": "ml", "tO": "ml" }, "tl": { "in": { "content": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 0, "f": 0, "e": "power3.inOut", "pE": "d", "x": [0, 0, 0, 0, 0], "y": ["100%", "100%", "100%", "100%", "100%"], "o": 0, "xRe": 0, "yRe": 0, "off": 0 }, { "t": 140, "d": 1200, "f": 1200, "e": "power3.inOut", "pE": "d", "x": [0, 0, 0, 0, 0], "y": [0, 0, 0, 0, 0], "o": 1, "xRe": 0, "yRe": 0, "off": 0 }] }, "mask": { "all": [{ "t": 0, "d": 0, "f": 0, "e": "power3.inOut", "x": [0, 0, 0, 0, 0], "y": [0, 0, 0, 0, 0], "oflow": "hidden", "xRe": 0, "yRe": 0, "off": 0 }, { "t": 140, "d": 1200, "f": 1200, "e": "power3.inOut", "x": [0, 0, 0, 0, 0], "y": [0, 0, 0, 0, 0], "oflow": "hidden", "xRe": 0, "yRe": 0, "off": 0 }] } }, "out": { "content": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 1000, "f": 1000, "e": "power4.inOut", "pE": "n", "x": ["inherit", "inherit", "inherit", "inherit", "inherit"], "y": ["inherit", "inherit", "inherit", "inherit", "inherit"], "o": 0, "xRe": 0, "yRe": 0, "off": 0 }] }, "mask": { "all": [{ "t": 0, "d": 1000, "f": 1000, "e": "power4.inOut", "oflow": "visible", "xRe": 0, "yRe": 0, "off": 0 }] } } }, "p": { "t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0] }, "m": { "t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0] }, "type": "image" }, "1": { "rTo": "slide", "id": 1, "alias": "Text-1", "content": { "text": "Frische Lebensmittel, direkt zu Ihnen" }, "size": { "w": ["1587px", "1587px", "1413px", "790px", "424px"], "h": ["#a", "auto", "auto", "auto", "auto"], "minW": ["none", "none", "none", "none", "none"], "minH": ["none", "none", "none", "none", "none"] }, "pos": { "x": ["-1px", "-1px", "-1px", "-1px", "-1px"], "y": ["-10px", "-10px", "22px", "22px", "22px"], "h": ["center", "center", "center", "center", "center"], "v": ["middle", "middle", "middle", "middle", "middle"], "pos": "absolute", "float": ["none", "none", "none", "none", "none"], "clear": ["none", "none", "none", "none", "none"] }, "zIndex": 9, "order": 9, "display": ["block", "block", "block", "block", "block"], "vA": "top", "bg": { "color": { "orig": "transparent", "type": "solid", "string": "transparent" } }, "attr": { "aO": "ml", "tO": "ml" }, "tl": { "in": { "chars": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 0, "f": 0, "e": "power3.inOut", "x": [0, 0, 0, 0, 0], "y": ["70%", "70%", "70%", "70%", "70%"], "o": "0", "rX": "10deg", "dir": "start", "delay": 5, "xRe": 1, "yRe": 1, "off": 0 }, { "t": 0, "d": "1650", "f": "1650", "e": "expo.inOut", "x": [0, 0, 0, 0, 0], "y": ["0%", "0%", "0%", "0%", "0%"], "o": 1, "rX": 0, "dir": "start", "delay": "2", "xRe": 1, "yRe": 1, "off": 0 }] }, "content": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 0, "f": 0, "e": "power3.inOut", "pE": "d", "x": ["0px", "0px", 0, 0, 0], "y": ["-1px", "-1px", "-1px", "-1px", "-1px"], "o": "1", "xRe": 0, "yRe": 0, "off": 0 }, { "t": 0, "d": 2130, "f": 2130, "e": "power3.inOut", "pE": "d", "x": [0, 0, 0, 0, 0], "y": [0, 0, 0, 0, 0], "o": 1, "xRe": 0, "yRe": 0, "off": 0 }] }, "mask": { "all": [{ "t": 0, "d": 0, "f": 0, "e": "power3.inOut", "x": [0, 0, 0, 0, 0], "y": [0, 0, 0, 0, 0], "oflow": "hidden", "xRe": 0, "yRe": 0, "off": 0 }, { "t": 0, "d": 2130, "f": 2130, "e": "power3.inOut", "xRe": 0, "yRe": 0, "off": 0 }] }, "clip": { "orig": "t", "type": "r", "all": [{ "t": 0, "d": 0, "f": 0, "e": "power3.inOut", "c": "50%" }, { "t": 0, "d": "1650", "f": "1650", "e": "power3.inOut", "c": 100 }] } }, "out": { "chars": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 1000, "f": 1000, "e": "power4.inOut", "x": ["inherit", "inherit", "inherit", "inherit", "inherit"], "y": ["inherit", "inherit", "inherit", "inherit", "inherit"], "o": 1, "dir": "start", "delay": 5, "xRe": 1, "yRe": 1, "off": 0 }] }, "content": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 1000, "f": 1000, "e": "power4.inOut", "pE": "n", "x": ["inherit", "inherit", "inherit", "inherit", "inherit"], "y": ["inherit", "inherit", "inherit", "inherit", "inherit"], "o": 0, "xRe": 0, "yRe": 0, "off": 0 }] }, "mask": { "all": [{ "t": 0, "d": 1000, "f": 1000, "e": "power4.inOut", "oflow": "visible", "xRe": 0, "yRe": 0, "off": 0 }] }, "clip": { "orig": "t", "type": "r", "all": [{ "t": 0, "d": 1000, "f": 1000, "e": "power4.inOut", "c": "inherit" }] } } }, "p": { "t": [0, 0, 0, 0, 0], "b": [10, 10, 10, 10, 10], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0] }, "m": { "t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0] }, "tA": ["center", "center", "center", "center", "center"], "color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"], "font": { "family": "'Inter Tight'", "size": ["60px", "60px", "40px", "35px", "30px"], "weight": ["600", "600", "600", "600", "600"], "ls": [0, 0, 0, 0, 0] }, "lh": ["120px", "120px", "100px", "90px", "60px"], "type": "text", "toggle": { "text": "" } }, "2": { "rTo": "slide", "id": 2, "alias": "Text-2", "content": { "text": "#srfshcd#<a class=\"qodef-shortcode qodef-m  qodef-button qodef-layout--filled qodef-show-button-arrow--yes  qodef-html--link\" style=\"background-color: #000000; color: #FFFFFF;\" href=\"https:\/\/freightexpress.qodeinteractive.com\/about-us\/\" target=\"_self\" >\n\t<span class=\"qodef-m-text\" data-title=\"Mehr erfahren\">Mehr erfahren</span>\n            <span class=\"qodef-btn-arrow\"><svg class=\"qodef-svg--button-arrow-standard\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"18.476\" height=\"18.044\" viewBox=\"0 0 18.476 18.044\"><g transform=\"translate(9.007 0.992) rotate(45)\"><path d=\"M0,11.312,11.377,0\" transform=\"translate(0 0.011)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\/><path d=\"M8.466,8.661V0H0\" transform=\"translate(2.925 0)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\/><\/g><\/svg><\/span>\n    <\/a>\n" }, "size": { "w": ["auto", "auto", "auto", "auto", "auto"], "h": ["auto", "auto", "auto", "auto", "auto"], "minW": ["none", "none", "none", "none", "none"], "minH": ["none", "none", "none", "none", "none"] }, "pos": { "x": ["1px", "1px", "1px", "1px", "1px"], "y": ["90px", "90px", "126px", "171px", "153px"], "h": ["center", "center", "center", "center", "center"], "v": ["middle", "middle", "middle", "middle", "middle"], "pos": "absolute", "float": ["none", "none", "none", "none", "none"], "clear": ["none", "none", "none", "none", "none"] }, "zIndex": 7, "order": 7, "display": ["block", "block", "block", "block", "block"], "vA": "top", "bg": { "color": { "orig": "transparent", "type": "solid", "string": "transparent" } }, "attr": { "aO": "ml", "tO": "ml" }, "tl": { "in": { "content": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 0, "f": 0, "e": "power2.inOut", "pE": "d", "x": [0, 0, 0, 0, 0], "y": ["50", "50", "50", "50", "50"], "o": 0, "xRe": 0, "yRe": 0, "off": 0 }, { "t": 400, "d": 1000, "f": 1000, "e": "power2.inOut", "pE": "d", "x": [0, 0, 0, 0, 0], "y": [0, 0, 0, 0, 0], "o": 1, "xRe": 0, "yRe": 0, "off": 0 }] } }, "out": { "content": { "pers": "600px", "orig": { "x": "50%", "y": "50%", "z": "0" }, "all": [{ "t": 0, "d": 1000, "f": 1000, "e": "power4.inOut", "pE": "n", "x": ["inherit", "inherit", "inherit", "inherit", "inherit"], "y": ["inherit", "inherit", "inherit", "inherit", "inherit"], "o": 0, "xRe": 0, "yRe": 0, "off": 0 }] } } }, "p": { "t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0] }, "m": { "t": [0, 0, 0, 0, 0], "b": [0, 0, 0, 0, 0], "l": [0, 0, 0, 0, 0], "r": [0, 0, 0, 0, 0] }, "tA": ["center", "center", "center", "center", "center"], "color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"], "font": { "size": [20, 20, 20, 20, 20], "weight": [400, 400, 400, 400, 400], "ls": [0, 0, 0, 0, 0] }, "lh": [25, 25, 25, 25, 25], "type": "text", "toggle": { "text": "" } }, "10": { "rTo": "slide", "id": 10, "alias": "Slide BG Layer", "subtype": "slidebg", "size": { "cMode": "cover" }, "pos": { "h": ["center", "center", "center", "center", "center"], "v": ["center", "center", "center", "center", "center"], "pos": "absolute", "float": ["none", "none", "none", "none", "none"], "clear": ["none", "none", "none", "none", "none"] }, "zIndex": 0, "order": 0, "display": ["block", "block", "block", "block", "block"], "bg": { "video": { "src": "assets\/video\/Animatedherosection2.mp4", "loop": true, "mute": true, "volume": 0, "vVolume": 0, "vType": "html5", "size": "cover", "videoStartAt": "0" } }, "tl": { "in": { "bg": { "ms": 1000, "rnd": false, "temp": { "t": "*opacity* Fade In", "p": "fade", "m": "basic", "g": "fade" }, "addOns": [], "in": { "o": 0 }, "out": { "a": false } } } }, "type": "shape" } } }, "8": { "id": 8, "slide": { "addOns": [], "id": 8, "version": "6.7.13", "title": "", "parentId": null, "language": "default", "order": 2, "thumb": { "src": "https:\/\/freightexpress.qodeinteractive.com\/wp-content\/uploads\/2024\/06\/h1-img-6-50x100.jpg", "srcId": "", "admin": "", "adminId": "", "dimension": "slider", "default": { "image": { "src": "https:\/\/freightexpress.qodeinteractive.com\/wp-content\/uploads\/2024\/06\/h1-img-6.jpg", "repeat": "", "size": "cover", "pos": { "x": "50%", "y": "50%" } } } }, "description": "", "attr": { "class": "", "data": "", "id": "", "a": "", "aO": "ml", "t": "", "tO": "", "deepLink": "", "attr": "" }, "publish": { "from": "", "to": "", "state": "" }, "slideshow": { "stop": false, "len": "default", "hal": 0, "hom": false, "hfn": false }, "loop": { "u": false, "r": -1, "s": 0, "e": 99999 }, "params": [{ "v": "Air  Freight", "l": "20" }] }, "layers": [] }, "9": { "id": 9, "slide": { "addOns": [], "id": 9, "version": "6.7.13", "title": "", "parentId": null, "language": "default", "order": 3, "thumb": { "src": "https:\/\/freightexpress.qodeinteractive.com\/wp-content\/uploads\/2024\/06\/h1-img-7-50x100.jpg", "srcId": "", "admin": "", "adminId": "", "dimension": "slider", "default": { "image": { "src": "https:\/\/freightexpress.qodeinteractive.com\/wp-content\/uploads\/2024\/06\/h1-img-7.jpg", "repeat": "", "size": "cover", "pos": { "x": "50%", "y": "50%" } } } }, "description": "", "attr": { "class": "", "data": "", "id": "", "a": "", "aO": "ml", "t": "", "tO": "", "deepLink": "", "attr": "" }, "publish": { "from": "", "to": "", "state": "" }, "slideshow": { "stop": false, "len": "default", "hal": 0, "hom": false, "hfn": false }, "loop": { "u": false, "r": -1, "s": 0, "e": 99999 }, "params": [{ "v": "Transport Logistics", "l": "20" }] }, "layers": [] }, "13": { "id": "13", "slide": { "addOns": [], "id": 13, "version": "6.7.13", "title": "Global Layers", "parentId": null, "language": "default", "oflow": false, "global": true, "respVP": true, "pos": "front", "fullHeight": true }, "layers": [] } }, "id": "1", "addOns": [] };
-		if (SR7.F.init) SR7.F.init(); // DOUBLE CALL NOT A PROBLEM, MANAGED IN INIT
-		document.addEventListener('DOMContentLoaded', function () { if (SR7.F.init) SR7.F.init(); else SR7.shouldBeInited = true; });
-		window.addEventListener('load', function () { if (SR7.F.init) SR7.F.init(); else SR7.shouldBeInited = true; });
-		SR7.E.v6v7ids ??= {}
-		SR7.E.v6v7ids = JSON.parse('{\"n\":{\"10\":7,\"12\":8,\"13\":9},\"s\":{\"1\":13}}');
 	</script>
 	<div id="ImportExport-core-page-inline-style"
 		data-style="@media only screen and (max-width: 1512px){.qodef-custom-font-896 { font-size: 97px !important;line-height: 97px !important;}}@media only screen and (max-width: 1200px){.qodef-custom-font-896 { font-size: 90px !important;line-height: 90px !important;}}@media only screen and (max-width: 880px){.qodef-custom-font-896 { font-size: 90px !important;line-height: 90px !important;}}@media only screen and (max-width: 680px){.qodef-custom-font-896 { font-size: 80px !important;line-height: 90px !important;}}">
