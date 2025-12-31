@@ -288,7 +288,7 @@
 											}
 
 											window.qodefGeoLocation.showRangeSlider( latlng, true );
-											qodef.body.trigger( 'ImportExport_core_trigger_after_autocomplete_places', [placesInput] );
+											qodef.body.trigger( 'importiny_core_trigger_after_autocomplete_places', [placesInput] );
 										}
 									}
 								}
@@ -465,7 +465,7 @@
 						// Enable reset icon in field
 						$( placeInputID ).next().show();
 						window.qodefGeoLocation.reset();
-						qodef.body.trigger( 'ImportExport_core_trigger_after_autocomplete_places', [placeInputID] );
+						qodef.body.trigger( 'importiny_core_trigger_after_autocomplete_places', [placeInputID] );
 					}
 				);
 			}

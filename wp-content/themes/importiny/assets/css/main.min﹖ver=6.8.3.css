@@ -966,7 +966,7 @@ hr:not(.is-style-wide):not(.is-style-dots) {
     max-width: 100px
 }
 
-body:not([class*=ImportExport-core]) hr {
+body:not([class*=importiny-core]) hr {
     clear: both
 }
 
@@ -1647,7 +1647,7 @@ p {
     margin-bottom: 20px
 }
 
-body[class*=ImportExport-core] p {
+body[class*=importiny-core] p {
     margin: 10px 0
 }
 
@@ -2240,7 +2240,7 @@ input[type=radio]:checked:after {
     opacity: 1
 }
 
-[class*=ImportExport] .select2-container--default {
+[class*=importiny] .select2-container--default {
     display: inline-block;
     margin: 0 0 21px;
     position: relative;
@@ -2248,13 +2248,13 @@ input[type=radio]:checked:after {
     width: auto
 }
 
-[class*=ImportExport] .select2-container--default .qodef-select2-icon-option {
+[class*=importiny] .select2-container--default .qodef-select2-icon-option {
     display: flex;
     align-items: center;
     width: 100%
 }
 
-[class*=ImportExport] .select2-container--default .qodef-select2-icon {
+[class*=importiny] .select2-container--default .qodef-select2-icon {
     flex-shrink: 0;
     width: 20px;
     height: 20px;
@@ -2264,7 +2264,7 @@ input[type=radio]:checked:after {
     background-repeat: no-repeat
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--single {
+[class*=importiny] .select2-container--default .select2-selection--single {
     border-radius: 0;
     border-style: solid;
     border-width: 1px;
@@ -2283,7 +2283,7 @@ input[type=radio]:checked:after {
     user-select: none
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--single .select2-selection__rendered {
+[class*=importiny] .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: inherit;
     display: block;
     line-height: inherit;
@@ -2293,7 +2293,7 @@ input[type=radio]:checked:after {
     white-space: nowrap
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--single .select2-selection__clear {
+[class*=importiny] .select2-container--default .select2-selection--single .select2-selection__clear {
     cursor: pointer;
     float: right;
     font-weight: inherit;
@@ -2301,11 +2301,11 @@ input[type=radio]:checked:after {
     position: relative
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--single .select2-selection__placeholder {
+[class*=importiny] .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: inherit
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--single .select2-selection__arrow {
+[class*=importiny] .select2-container--default .select2-selection--single .select2-selection__arrow {
     align-items: center;
     color: inherit;
     display: flex;
@@ -2317,11 +2317,11 @@ input[type=radio]:checked:after {
     width: 50px
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--single .select2-selection__arrow b {
+[class*=importiny] .select2-container--default .select2-selection--single .select2-selection__arrow b {
     display: none
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--single .select2-selection__arrow:before {
+[class*=importiny] .select2-container--default .select2-selection--single .select2-selection__arrow:before {
     background-color: currentColor;
     content: "";
     display: block;
@@ -2335,7 +2335,7 @@ input[type=radio]:checked:after {
     height: 100%
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple {
+[class*=importiny] .select2-container--default .select2-selection--multiple {
     border-radius: 0;
     border-style: solid;
     border-width: 1px;
@@ -2354,7 +2354,7 @@ input[type=radio]:checked:after {
     user-select: none
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+[class*=importiny] .select2-container--default .select2-selection--multiple .select2-selection__rendered {
     color: inherit;
     display: block;
     line-height: inherit;
@@ -2365,18 +2365,18 @@ input[type=radio]:checked:after {
     white-space: nowrap
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+[class*=importiny] .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
     margin: 0;
     padding: 0
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__placeholder {
+[class*=importiny] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__placeholder {
     color: inherit;
     float: left;
     margin: 0
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__clear {
+[class*=importiny] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__clear {
     cursor: pointer;
     float: right;
     font-weight: inherit;
@@ -2384,7 +2384,7 @@ input[type=radio]:checked:after {
     position: relative
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+[class*=importiny] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
     background-color: var(--qode-main-color);
     border: 0;
     border-radius: 0;
@@ -2395,7 +2395,7 @@ input[type=radio]:checked:after {
     padding: 5px 10px
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice__remove {
+[class*=importiny] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice__remove {
     color: inherit;
     cursor: pointer;
     display: inline-block;
@@ -2404,16 +2404,16 @@ input[type=radio]:checked:after {
     transition: opacity .2s ease-out
 }
 
-[class*=ImportExport] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice__remove:hover {
+[class*=importiny] .select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice__remove:hover {
     color: inherit;
     opacity: .8
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--inline {
+[class*=importiny] .select2-container--default .select2-search--inline {
     float: left
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--inline .select2-search__field {
+[class*=importiny] .select2-container--default .select2-search--inline .select2-search__field {
     -webkit-appearance: none;
     border: none !important;
     color: inherit;
@@ -2426,15 +2426,15 @@ input[type=radio]:checked:after {
     width: 100%
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--inline .select2-search__field:focus {
+[class*=importiny] .select2-container--default .select2-search--inline .select2-search__field:focus {
     border-color: var(--qode-main-color)
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+[class*=importiny] .select2-container--default .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
     -webkit-appearance: none
 }
 
-[class*=ImportExport] .select2-container--default .select2-dropdown {
+[class*=importiny] .select2-container--default .select2-dropdown {
     background-color: #fafafa;
     border: 1px solid #d1d1d1;
     border-radius: 0;
@@ -2446,26 +2446,26 @@ input[type=radio]:checked:after {
     z-index: 99999
 }
 
-.admin-bar[class*=ImportExport] .select2-container--default .select2-dropdown {
+.admin-bar[class*=importiny] .select2-container--default .select2-dropdown {
     top: 32px
 }
 
 @media only screen and (max-width:782px) {
-    .admin-bar[class*=ImportExport] .select2-container--default .select2-dropdown {
+    .admin-bar[class*=importiny] .select2-container--default .select2-dropdown {
         top: 46px
     }
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--dropdown {
+[class*=importiny] .select2-container--default .select2-search--dropdown {
     display: block;
     padding: 14px 15px 2px
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--dropdown.select2-search--hide {
+[class*=importiny] .select2-container--default .select2-search--dropdown.select2-search--hide {
     display: none
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--dropdown .select2-search__field {
+[class*=importiny] .select2-container--default .select2-search--dropdown .select2-search__field {
     -webkit-appearance: none;
     border: 1px solid #d1d1d1;
     color: #000;
@@ -2479,25 +2479,25 @@ input[type=radio]:checked:after {
     width: 100%
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+[class*=importiny] .select2-container--default .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
     -webkit-appearance: none
 }
 
-[class*=ImportExport] .select2-container--default .select2-search--dropdown .select2-search__field:focus {
+[class*=importiny] .select2-container--default .select2-search--dropdown .select2-search__field:focus {
     border: 1px solid #d1d1d1;
     color: #000
 }
 
-[class*=ImportExport] .select2-container--default .select2-results {
+[class*=importiny] .select2-container--default .select2-results {
     display: block
 }
 
-[class*=ImportExport] .select2-container--default .select2-results>.select2-results__options {
+[class*=importiny] .select2-container--default .select2-results>.select2-results__options {
     max-height: 200px;
     overflow-y: auto
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__options {
+[class*=importiny] .select2-container--default .select2-results__options {
     font-size: 15px;
     line-height: 25px;
     list-style: none;
@@ -2505,7 +2505,7 @@ input[type=radio]:checked:after {
     padding: 7px 20px
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option {
+[class*=importiny] .select2-container--default .select2-results__option {
     background-color: transparent !important;
     color: #000 !important;
     cursor: pointer;
@@ -2518,113 +2518,113 @@ input[type=radio]:checked:after {
     user-select: none
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option:hover {
+[class*=importiny] .select2-container--default .select2-results__option:hover {
     color: var(--qode-main-color) !important
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option[role=group] {
+[class*=importiny] .select2-container--default .select2-results__option[role=group] {
     padding: 0
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option .select2-results__option {
+[class*=importiny] .select2-container--default .select2-results__option .select2-results__option {
     padding-left: 1em
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+[class*=importiny] .select2-container--default .select2-results__option .select2-results__option .select2-results__group {
     padding-left: 0
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+[class*=importiny] .select2-container--default .select2-results__option .select2-results__option .select2-results__option {
     margin-left: -1em;
     padding-left: 2em
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+[class*=importiny] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
     margin-left: -2em;
     padding-left: 3em
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+[class*=importiny] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
     margin-left: -3em;
     padding-left: 4em
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+[class*=importiny] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
     margin-left: -4em;
     padding-left: 5em
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+[class*=importiny] .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
     margin-left: -5em;
     padding-left: 6em
 }
 
-[class*=ImportExport] .select2-container--default .select2-results__group {
+[class*=importiny] .select2-container--default .select2-results__group {
     cursor: default;
     display: block;
     padding: 7px 0
 }
 
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--single .select2-selection__clear {
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--single .select2-selection__clear {
     float: left
 }
 
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--single .select2-selection__rendered {
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--single .select2-selection__rendered {
     padding: 0
 }
 
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--single .select2-selection__arrow {
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--single .select2-selection__arrow {
     left: 0;
     right: auto
 }
 
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-search--inline,
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice,
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__placeholder {
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-search--inline,
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice,
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__placeholder {
     float: right
 }
 
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__rendered {
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__rendered {
     padding: 0
 }
 
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice {
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice {
     margin: 7px auto 0 5px
 }
 
-[class*=ImportExport] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
+[class*=importiny] .select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
     margin: 0 auto 0 3px
 }
 
-[class*=ImportExport] .select2-container--default.select2-container--disabled .select2-selection--multiple,
-[class*=ImportExport] .select2-container--default.select2-container--disabled .select2-selection--single {
+[class*=importiny] .select2-container--default.select2-container--disabled .select2-selection--multiple,
+[class*=importiny] .select2-container--default.select2-container--disabled .select2-selection--single {
     background-color: #fafafa;
     cursor: default
 }
 
-[class*=ImportExport] .select2-container--default.select2-container--disabled .select2-selection--multiple .select2-selection__clear,
-[class*=ImportExport] .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+[class*=importiny] .select2-container--default.select2-container--disabled .select2-selection--multiple .select2-selection__clear,
+[class*=importiny] .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
     display: none
 }
 
-[class*=ImportExport] .select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+[class*=importiny] .select2-container--default.select2-container--disabled .select2-selection__choice__remove {
     display: none
 }
 
-[class*=ImportExport] .select2-container--default.select2-container--open .select2-selection--multiple,
-[class*=ImportExport] .select2-container--default.select2-container--open .select2-selection--single {
+[class*=importiny] .select2-container--default.select2-container--open .select2-selection--multiple,
+[class*=importiny] .select2-container--default.select2-container--open .select2-selection--single {
     color: var(--qode-main-color)
 }
 
-[class*=ImportExport] .select2-container--default.select2-container--open .select2-dropdown {
+[class*=importiny] .select2-container--default.select2-container--open .select2-dropdown {
     left: 0
 }
 
-[class*=ImportExport] .select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--above {
+[class*=importiny] .select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--above {
     border-bottom-color: transparent
 }
 
-[class*=ImportExport] .select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--below {
+[class*=importiny] .select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--below {
     border-top-color: transparent
 }
 
@@ -2652,7 +2652,7 @@ input[type=radio]:checked:after {
     color: #ccc !important
 }
 
-body:not([class*=ImportExport-core]) .select2-container--default .select2-selection--single .select2-selection__arrow:before {
+body:not([class*=importiny-core]) .select2-container--default .select2-selection--single .select2-selection__arrow:before {
     content: "▾";
     font-family: initial;
     font-size: 16px
@@ -3747,8 +3747,8 @@ html.touchevents body.qodef-swiper--show-hidden-slides #qodef-page-wrapper {
     position: initial
 }
 
-body:not([class*=ImportExport-core]) .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown .wpml-ls-item-toggle:after,
-body:not([class*=ImportExport-core]) .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle:after {
+body:not([class*=importiny-core]) .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown .wpml-ls-item-toggle:after,
+body:not([class*=importiny-core]) .widget_icl_lang_sel_widget .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle:after {
     content: "▾";
     font-family: initial;
     font-size: 16px
@@ -4329,7 +4329,7 @@ body:not([class*=ImportExport-core]) .widget_icl_lang_sel_widget .wpml-ls-legacy
     margin: 34px 0 0
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog .qodef-e-content {
+body:not([class*=importiny-core]) .qodef-blog .qodef-e-content {
     margin: 33px 0 0
 }
 
@@ -4401,7 +4401,7 @@ body:not([class*=ImportExport-core]) .qodef-blog .qodef-e-content {
     margin: 15px 0 0
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog .qodef-e-excerpt {
+body:not([class*=importiny-core]) .qodef-blog .qodef-e-excerpt {
     margin: 16px 0 0
 }
 
@@ -4430,11 +4430,11 @@ body:not([class*=ImportExport-core]) .qodef-blog .qodef-e-excerpt {
     margin-top: 18px
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog .qodef-e-bottom-holder .qodef-info-separator-end {
+body:not([class*=importiny-core]) .qodef-blog .qodef-e-bottom-holder .qodef-info-separator-end {
     display: inline
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog .qodef-e-bottom-holder .qodef-info-separator-end:last-child {
+body:not([class*=importiny-core]) .qodef-blog .qodef-e-bottom-holder .qodef-info-separator-end:last-child {
     display: none
 }
 
@@ -4461,7 +4461,7 @@ body:not([class*=ImportExport-core]) .qodef-blog .qodef-e-bottom-holder .qodef-i
     width: 100%
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog article .qodef-theme-button {
+body:not([class*=importiny-core]) .qodef-blog article .qodef-theme-button {
     color: var(--qode-main-color);
     padding: 0;
     background: 0 0;
@@ -4470,7 +4470,7 @@ body:not([class*=ImportExport-core]) .qodef-blog article .qodef-theme-button {
     line-height: 19px
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog article .qodef-theme-button:after {
+body:not([class*=importiny-core]) .qodef-blog article .qodef-theme-button:after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -4485,13 +4485,13 @@ body:not([class*=ImportExport-core]) .qodef-blog article .qodef-theme-button:aft
     background-size: 100% 100%
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog article .qodef-theme-button:hover {
+body:not([class*=importiny-core]) .qodef-blog article .qodef-theme-button:hover {
     color: var(--qode-main-color);
     padding: 0;
     background: 0 0
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog article .qodef-theme-button:hover:after {
+body:not([class*=importiny-core]) .qodef-blog article .qodef-theme-button:hover:after {
     transform: translateX(var(--qode-x))
 }
 
@@ -4499,11 +4499,11 @@ body:not([class*=ImportExport-core]) .qodef-blog article .qodef-theme-button:hov
     display: inline-block
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog article.qodef-blog-item:not(.has-post-thumbnail):not(.format-link):not(.format-quote) .qodef-e-media {
+body:not([class*=importiny-core]) .qodef-blog article.qodef-blog-item:not(.has-post-thumbnail):not(.format-link):not(.format-quote) .qodef-e-media {
     display: none
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog article.qodef-blog-item:not(.has-post-thumbnail):not(.format-link):not(.format-quote) .qodef-e-inner {
+body:not([class*=importiny-core]) .qodef-blog article.qodef-blog-item:not(.has-post-thumbnail):not(.format-link):not(.format-quote) .qodef-e-inner {
     margin-top: -41px
 }
 
@@ -4746,7 +4746,7 @@ html.elementor-html .qodef-blog article.format-audio audio {
     margin-bottom: 85px
 }
 
-body:not([class*=ImportExport-core]) .qodef-blog.qodef--list:not(.qodef-shortcode) .qodef-blog-item:not(:last-of-type) {
+body:not([class*=importiny-core]) .qodef-blog.qodef--list:not(.qodef-shortcode) .qodef-blog-item:not(:last-of-type) {
     margin-bottom: 84px
 }
 
@@ -5266,15 +5266,15 @@ body:not([class*=ImportExport-core]) .qodef-blog.qodef--list:not(.qodef-shortcod
     display: inline-block
 }
 
-#qodef-page-footer .widget_ImportExport_core_icon_list_item {
+#qodef-page-footer .widget_importiny_core_icon_list_item {
     display: inline-flex
 }
 
-#qodef-page-footer .widget_ImportExport_core_icon_list_item .qodef-icon-list-item {
+#qodef-page-footer .widget_importiny_core_icon_list_item .qodef-icon-list-item {
     margin-right: 23px
 }
 
-#qodef-page-footer .widget_ImportExport_core_icon_list_item .qodef-icon-list-item .qodef-icon {
+#qodef-page-footer .widget_importiny_core_icon_list_item .qodef-icon-list-item .qodef-icon {
     font-size: 20px
 }
 
@@ -6025,7 +6025,7 @@ figure>figcaption {
     padding: 6px 0
 }
 
-body:not([class*=ImportExport-core]) .qodef-mobile-header-navigation ul li>.sub-menu {
+body:not([class*=importiny-core]) .qodef-mobile-header-navigation ul li>.sub-menu {
     padding-left: 39px;
     margin: 0
 }
@@ -6206,7 +6206,7 @@ body:not([class*=ImportExport-core]) .qodef-mobile-header-navigation ul li>.sub-
     border: 1px solid #d1d1d1
 }
 
-body:not([class*=ImportExport-core]) .qodef-header-navigation ul li.qodef-menu-item--narrow ul {
+body:not([class*=importiny-core]) .qodef-header-navigation ul li.qodef-menu-item--narrow ul {
     width: 286px
 }
 
@@ -6400,7 +6400,7 @@ body:not([class*=ImportExport-core]) .qodef-header-navigation ul li.qodef-menu-i
     margin-top: 7px
 }
 
-body:not([class*=ImportExport-core]) .qodef-m-pagination {
+body:not([class*=importiny-core]) .qodef-m-pagination {
     margin-top: 62px
 }
 
@@ -7068,8 +7068,8 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     border-radius: 0
 }
 
-.widget.widget_ImportExport_core_blog_list .qodef-e-info-custom-date,
-[class*=elementor-widget-wp-widget].widget_ImportExport_core_blog_list .qodef-e-info-custom-date {
+.widget.widget_importiny_core_blog_list .qodef-e-info-custom-date,
+[class*=elementor-widget-wp-widget].widget_importiny_core_blog_list .qodef-e-info-custom-date {
     display: none !important
 }
 
@@ -7376,10 +7376,10 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     margin-top: 8px
 }
 
-.widget.widget_ImportExport_core_title_widget,
-.widget[data-widget_type*=widget-ImportExport-core-title-widget],
-[class*=elementor-widget-wp-widget].widget_ImportExport_core_title_widget,
-[class*=elementor-widget-wp-widget][data-widget_type*=widget-ImportExport-core-title-widget] {
+.widget.widget_importiny_core_title_widget,
+.widget[data-widget_type*=widget-importiny-core-title-widget],
+[class*=elementor-widget-wp-widget].widget_importiny_core_title_widget,
+[class*=elementor-widget-wp-widget][data-widget_type*=widget-importiny-core-title-widget] {
     margin: 0
 }
 
@@ -7472,7 +7472,7 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     margin: 0
 }
 
-.widget:not(.widget_ImportExport_core_title_widget) {
+.widget:not(.widget_importiny_core_title_widget) {
     margin: 0 0 35px
 }
 
@@ -7583,7 +7583,7 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     margin: 0 0 21px
 }
 
-[class*=elementor-widget-wp-widget]:not(.widget_ImportExport_core_title_widget) {
+[class*=elementor-widget-wp-widget]:not(.widget_importiny_core_title_widget) {
     margin: 0 0 35px
 }
 
@@ -7667,17 +7667,17 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     margin-bottom: -5px !important
 }
 
-#qodef-top-area .widget:not(.widget_ImportExport_core_title_widget) {
+#qodef-top-area .widget:not(.widget_importiny_core_title_widget) {
     margin: 0 0 0;
     color: #b6cfd6
 }
 
-#qodef-top-area .widget:not(.widget_ImportExport_core_title_widget) h1:not([class*=qodef]),
-#qodef-top-area .widget:not(.widget_ImportExport_core_title_widget) h2:not([class*=qodef]),
-#qodef-top-area .widget:not(.widget_ImportExport_core_title_widget) h3:not([class*=qodef]),
-#qodef-top-area .widget:not(.widget_ImportExport_core_title_widget) h4:not([class*=qodef]),
-#qodef-top-area .widget:not(.widget_ImportExport_core_title_widget) h5:not([class*=qodef]),
-#qodef-top-area .widget:not(.widget_ImportExport_core_title_widget) h6:not([class*=qodef]) {
+#qodef-top-area .widget:not(.widget_importiny_core_title_widget) h1:not([class*=qodef]),
+#qodef-top-area .widget:not(.widget_importiny_core_title_widget) h2:not([class*=qodef]),
+#qodef-top-area .widget:not(.widget_importiny_core_title_widget) h3:not([class*=qodef]),
+#qodef-top-area .widget:not(.widget_importiny_core_title_widget) h4:not([class*=qodef]),
+#qodef-top-area .widget:not(.widget_importiny_core_title_widget) h5:not([class*=qodef]),
+#qodef-top-area .widget:not(.widget_importiny_core_title_widget) h6:not([class*=qodef]) {
     color: #b6cfd6
 }
 
@@ -7799,17 +7799,17 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     margin: 0 0 21px
 }
 
-#qodef-page-footer .widget:not(.widget_ImportExport_core_title_widget) {
+#qodef-page-footer .widget:not(.widget_importiny_core_title_widget) {
     margin: 0 0 35px;
     color: #b8ced4
 }
 
-#qodef-page-footer .widget:not(.widget_ImportExport_core_title_widget) h1:not([class*=qodef]),
-#qodef-page-footer .widget:not(.widget_ImportExport_core_title_widget) h2:not([class*=qodef]),
-#qodef-page-footer .widget:not(.widget_ImportExport_core_title_widget) h3:not([class*=qodef]),
-#qodef-page-footer .widget:not(.widget_ImportExport_core_title_widget) h4:not([class*=qodef]),
-#qodef-page-footer .widget:not(.widget_ImportExport_core_title_widget) h5:not([class*=qodef]),
-#qodef-page-footer .widget:not(.widget_ImportExport_core_title_widget) h6:not([class*=qodef]) {
+#qodef-page-footer .widget:not(.widget_importiny_core_title_widget) h1:not([class*=qodef]),
+#qodef-page-footer .widget:not(.widget_importiny_core_title_widget) h2:not([class*=qodef]),
+#qodef-page-footer .widget:not(.widget_importiny_core_title_widget) h3:not([class*=qodef]),
+#qodef-page-footer .widget:not(.widget_importiny_core_title_widget) h4:not([class*=qodef]),
+#qodef-page-footer .widget:not(.widget_importiny_core_title_widget) h5:not([class*=qodef]),
+#qodef-page-footer .widget:not(.widget_importiny_core_title_widget) h6:not([class*=qodef]) {
     color: #fff
 }
 
@@ -7966,17 +7966,17 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     border-color: var(--qode-main-color)
 }
 
-#qodef-side-area .widget:not(.widget_ImportExport_core_title_widget) {
+#qodef-side-area .widget:not(.widget_importiny_core_title_widget) {
     margin: 0 0 15px;
     color: #000
 }
 
-#qodef-side-area .widget:not(.widget_ImportExport_core_title_widget) h1:not([class*=qodef]),
-#qodef-side-area .widget:not(.widget_ImportExport_core_title_widget) h2:not([class*=qodef]),
-#qodef-side-area .widget:not(.widget_ImportExport_core_title_widget) h3:not([class*=qodef]),
-#qodef-side-area .widget:not(.widget_ImportExport_core_title_widget) h4:not([class*=qodef]),
-#qodef-side-area .widget:not(.widget_ImportExport_core_title_widget) h5:not([class*=qodef]),
-#qodef-side-area .widget:not(.widget_ImportExport_core_title_widget) h6:not([class*=qodef]) {
+#qodef-side-area .widget:not(.widget_importiny_core_title_widget) h1:not([class*=qodef]),
+#qodef-side-area .widget:not(.widget_importiny_core_title_widget) h2:not([class*=qodef]),
+#qodef-side-area .widget:not(.widget_importiny_core_title_widget) h3:not([class*=qodef]),
+#qodef-side-area .widget:not(.widget_importiny_core_title_widget) h4:not([class*=qodef]),
+#qodef-side-area .widget:not(.widget_importiny_core_title_widget) h5:not([class*=qodef]),
+#qodef-side-area .widget:not(.widget_importiny_core_title_widget) h6:not([class*=qodef]) {
     color: #000
 }
 
@@ -8098,17 +8098,17 @@ body:not([class*=ImportExport-core]) .qodef-m-pagination {
     margin: 0 0 21px
 }
 
-.qodef-mega-menu-widget-holder .widget:not(.widget_ImportExport_core_title_widget) {
+.qodef-mega-menu-widget-holder .widget:not(.widget_importiny_core_title_widget) {
     margin: 0 0 35px;
     color: #fff
 }
 
-.qodef-mega-menu-widget-holder .widget:not(.widget_ImportExport_core_title_widget) h1:not([class*=qodef]),
-.qodef-mega-menu-widget-holder .widget:not(.widget_ImportExport_core_title_widget) h2:not([class*=qodef]),
-.qodef-mega-menu-widget-holder .widget:not(.widget_ImportExport_core_title_widget) h3:not([class*=qodef]),
-.qodef-mega-menu-widget-holder .widget:not(.widget_ImportExport_core_title_widget) h4:not([class*=qodef]),
-.qodef-mega-menu-widget-holder .widget:not(.widget_ImportExport_core_title_widget) h5:not([class*=qodef]),
-.qodef-mega-menu-widget-holder .widget:not(.widget_ImportExport_core_title_widget) h6:not([class*=qodef]) {
+.qodef-mega-menu-widget-holder .widget:not(.widget_importiny_core_title_widget) h1:not([class*=qodef]),
+.qodef-mega-menu-widget-holder .widget:not(.widget_importiny_core_title_widget) h2:not([class*=qodef]),
+.qodef-mega-menu-widget-holder .widget:not(.widget_importiny_core_title_widget) h3:not([class*=qodef]),
+.qodef-mega-menu-widget-holder .widget:not(.widget_importiny_core_title_widget) h4:not([class*=qodef]),
+.qodef-mega-menu-widget-holder .widget:not(.widget_importiny_core_title_widget) h5:not([class*=qodef]),
+.qodef-mega-menu-widget-holder .widget:not(.widget_importiny_core_title_widget) h6:not([class*=qodef]) {
     color: #fff
 }
 
@@ -10422,7 +10422,7 @@ div.wc-block-components-notice-banner.cart-empty {
     content: "M"
 }
 
-body:not([class*=ImportExport-core]) .wc-block-cart table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantity .wc-block-cart-item__remove-link:after {
+body:not([class*=importiny-core]) .wc-block-cart table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantity .wc-block-cart-item__remove-link:after {
     content: "x";
     font-family: initial
 }
@@ -11078,14 +11078,14 @@ body:not([class*=ImportExport-core]) .wc-block-cart table.wc-block-cart-items .w
     content: "M"
 }
 
-body:not([class*=ImportExport-core]) #qodef-woo-page.qodef--cart .shop_table.wishlist_table td.product-remove a:after,
-body:not([class*=ImportExport-core]) #qodef-woo-page.qodef--cart .shop_table.wishlist_table th.product-remove a:after,
-body:not([class*=ImportExport-core]) #qodef-woo-page.qodef--cart .shop_table.woocommerce-cart-form__contents td.product-remove a:after,
-body:not([class*=ImportExport-core]) #qodef-woo-page.qodef--cart .shop_table.woocommerce-cart-form__contents th.product-remove a:after,
-body:not([class*=ImportExport-core]) .yith-wcwl-form .shop_table.wishlist_table td.product-remove a:after,
-body:not([class*=ImportExport-core]) .yith-wcwl-form .shop_table.wishlist_table th.product-remove a:after,
-body:not([class*=ImportExport-core]) .yith-wcwl-form .shop_table.woocommerce-cart-form__contents td.product-remove a:after,
-body:not([class*=ImportExport-core]) .yith-wcwl-form .shop_table.woocommerce-cart-form__contents th.product-remove a:after {
+body:not([class*=importiny-core]) #qodef-woo-page.qodef--cart .shop_table.wishlist_table td.product-remove a:after,
+body:not([class*=importiny-core]) #qodef-woo-page.qodef--cart .shop_table.wishlist_table th.product-remove a:after,
+body:not([class*=importiny-core]) #qodef-woo-page.qodef--cart .shop_table.woocommerce-cart-form__contents td.product-remove a:after,
+body:not([class*=importiny-core]) #qodef-woo-page.qodef--cart .shop_table.woocommerce-cart-form__contents th.product-remove a:after,
+body:not([class*=importiny-core]) .yith-wcwl-form .shop_table.wishlist_table td.product-remove a:after,
+body:not([class*=importiny-core]) .yith-wcwl-form .shop_table.wishlist_table th.product-remove a:after,
+body:not([class*=importiny-core]) .yith-wcwl-form .shop_table.woocommerce-cart-form__contents td.product-remove a:after,
+body:not([class*=importiny-core]) .yith-wcwl-form .shop_table.woocommerce-cart-form__contents th.product-remove a:after {
     content: "x";
     font-family: initial
 }
