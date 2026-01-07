@@ -3,8 +3,8 @@ import re
 
 def standardize_string(s):
     # Standardize the domain part if it exists
-    s = s.replace("importiny.qodeinteractive.com", "importiny.de")
-    s = s.replace("ImportExport.qodeinteractive.com", "importiny.de")
+    s = s.replace("importiny.qodeinteractive.com", "ntestifelsitewbarra.website")
+    s = s.replace("ImportExport.qodeinteractive.com", "ntestifelsitewbarra.website")
     
     # Handle both literal Unicode and URL-encoded versions
     # ﹕ -> %EF%B9%95
