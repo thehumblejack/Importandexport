@@ -228,6 +228,15 @@
 				height: auto !important;
 			}
 		}
+
+		/* Smooth Hover Animation for Articles */
+		.qodef-blog-item {
+			transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+		}
+
+		.qodef-blog-item:hover {
+			transform: translateY(-12px) !important;
+		}
 	</style>
 	<link rel='stylesheet' id='qode-zendesk-chat-css'
 		href='wp-content/plugins/qode-zendesk-chat/assets/main_ver=6.8.3.css' type='text/css' media='all' />
