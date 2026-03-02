@@ -825,7 +825,94 @@
 									</div>
 								</div>
 
-								<div class="elementor-element elementor-element-f6f7203 e-con-full qodef-elementor-content-grid qodef-extended-grid qodef-extended-grid--right e-flex e-con e-parent"
+								<style>
+									.product-filter-row {
+										display: flex;
+										flex-wrap: wrap;
+										justify-content: center;
+										gap: 12px;
+										padding: 0 0 40px;
+										width: 100%;
+									}
+
+									.filter-badge {
+										display: inline-flex;
+										align-items: center;
+										gap: 12px;
+										padding: 12px 28px;
+										border: 1px solid rgba(0, 0, 0, 0.1);
+										border-radius: 4px;
+										background: rgba(255, 255, 255, 0.7);
+										backdrop-filter: blur(10px);
+										-webkit-backdrop-filter: blur(10px);
+										font-family: 'Plus Jakarta Sans', sans-serif;
+										font-size: 13px;
+										font-weight: 700;
+										letter-spacing: 0.1em;
+										text-transform: uppercase;
+										cursor: pointer;
+										position: relative;
+										overflow: hidden;
+										transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+										color: #444;
+										box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+									}
+
+									.filter-badge svg {
+										width: 20px;
+										height: 20px;
+										transition: transform 0.4s ease;
+									}
+
+									.filter-badge:hover {
+										background: #fff;
+										transform: translateY(-3px);
+										box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+										color: #000;
+									}
+
+									.filter-badge:hover svg {
+										transform: scale(1.1) rotate(-5deg);
+									}
+
+									/* Fruits — Luxury Berry */
+									.filter-badge--fruits.active {
+										background: #c0392b;
+										color: #fff;
+										border-color: #c0392b;
+										box-shadow: 0 10px 20px rgba(192, 57, 43, 0.3);
+									}
+
+									/* Vegetables — Forest Green */
+									.filter-badge--vegetables.active {
+										background: #1a7a4a;
+										color: #fff;
+										border-color: #1a7a4a;
+										box-shadow: 0 10px 20px rgba(26, 122, 74, 0.3);
+									}
+
+									/* Mediterranean — Terra Gold */
+									.filter-badge--mediterranean.active {
+										background: #b48a00;
+										color: #fff;
+										border-color: #b48a00;
+										box-shadow: 0 10px 20px rgba(180, 138, 0, 0.3);
+									}
+
+									.filter-badge:active {
+										transform: translateY(-1px);
+									}
+
+									.product-item {
+										opacity: 0;
+										transform: translateY(3px);
+										transition: opacity 0.5s ease,
+											transform 0.5s ease !important;
+										will-change: opacity, transform;
+									}
+								</style>
+
+								<div class="elementor-element elementor-element-f6f7203 e-con-full qodef-elementor-content-grid e-flex e-con e-parent"
 									data-id="f6f7203" data-element_type="container">
 									<div class="elementor-element elementor-element-e9d88dc elementor-widget elementor-widget-fidelfood_core_blog_list"
 										data-id="e9d88dc" data-element_type="widget"
@@ -833,11 +920,287 @@
 										<div class="elementor-widget-container">
 											<div
 												class="qodef-shortcode qodef-m qodef-blog qodef-item-layout--classic qodef-skin--light qodef-grid qodef-item-layout--classic qodef-pagination--off">
-												<div class="qodef-grid-inner"
+												<div class="qodef-grid-inner" id="dynamic-product-grid"
 													style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+
+													<!-- Filter badges row -->
+													<div class="product-filter-row">
+														<button class="filter-badge filter-badge--fruits active"
+															data-filter="fruits">
+															<svg viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M12 22C16.4183 22 20 18.4183 20 14C20 9.58172 16.4183 6 12 6C7.58172 6 4 9.58172 4 14C4 18.4183 7.58172 22 12 22Z"
+																	fill="currentColor" fill-opacity="0.3" />
+																<path
+																	d="M12 22C16.4183 22 20 18.4183 20 14C20 9.58172 16.4183 6 12 6C7.58172 6 4 9.58172 4 14C4 18.4183 7.58172 22 12 22Z"
+																	stroke="currentColor" stroke-width="2" />
+																<path d="M12 6V2M15 3.5C15 3.5 14 2 12 2"
+																	stroke="currentColor" stroke-width="2"
+																	stroke-linecap="round" />
+															</svg>
+															<span>Fruits</span>
+														</button>
+														<button class="filter-badge filter-badge--vegetables"
+															data-filter="vegetables">
+															<svg viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 22V17" stroke="currentColor"
+																	stroke-width="2.5" stroke-linecap="round" />
+																<path
+																	d="M9 17C7.3 17 6 15.7 6 14C6 12.3 7.3 11 9 11C9 11 9.5 8 12 8C14.5 8 15 11 15 11C16.7 11 18 12.3 18 14C18 15.7 16.7 17 15 17H9Z"
+																	fill="currentColor" fill-opacity="0.2"
+																	stroke="currentColor" stroke-width="2" />
+																<path d="M12 8V5M12 5L10 3M12 5L14 3"
+																	stroke="currentColor" stroke-width="1.5"
+																	stroke-linecap="round" />
+															</svg>
+															<span>Vegetables</span>
+														</button>
+														<button class="filter-badge filter-badge--mediterranean"
+															data-filter="mediterranean">
+															<svg viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<ellipse cx="12" cy="13" rx="7" ry="9"
+																	fill="currentColor" fill-opacity="0.3"
+																	stroke="currentColor" stroke-width="2" />
+																<path d="M12 4C12 4 11 2 9 2M12 4C12 4 13 2 15 2M12 4V7"
+																	stroke="currentColor" stroke-width="1.5"
+																	stroke-linecap="round" />
+																<circle cx="10" cy="11" r="1.5" fill="currentColor" />
+															</svg>
+															<span>Mediterranean</span>
+														</button>
+													</div>
+
+													<!-- Strawberries -->
+													<article
+														class="qodef-e qodef-blog-item qodef-item--full post type-post status-publish format-standard product-item"
+														data-category="fruits"
+														style="flex: 0 0 auto; width: 384px; max-width: 100%;">
+														<div class="qodef-e-inner">
+															<div class="qodef-e-media">
+																<div class="custom-card-visual"
+																	style="width: 384px; height: 458px; position: relative; margin: 0 auto 30px;">
+																	<div
+																		style="max-width: 100%; width: 384px; height: 457.64px; left: 0; top: 0; position: absolute;">
+																		<div
+																			style="width: 384px; height: 288px; left: 0; top: 158.44px; position: absolute; background-color: #FFD1D1;">
+																			<div
+																				style="width: 100%; height: 288px; left: 0; top: -144px; position: absolute; display: flex; justify-content: center; align-items: center; font-size: 180px;">
+																				🍓</div>
+																			<div
+																				style="left: 24px; top: 209.92px; position: absolute; justify-content: center; color: #083344; font-size: 2.5rem; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 65.44px;">
+																				Erdbeeren</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="qodef-e-content">
+																<div
+																	style="max-width: 100%; width: 384px; margin: 0 auto;">
+																	<div
+																		style="display: inline-flex; justify-content: start; align-items: center; gap: 14px; margin-bottom: 20px;">
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Vitamin C</div>
+																		</div>
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Antioxidantien</div>
+																		</div>
+																	</div>
+																	<p class="qodef-e-excerpt"
+																		style="color: #0F313A !important; text-align: left; font-size: 26px; line-height: 1.3; margin-bottom: 20px;">
+																		Süß und saftig, ideal für frische Desserts und
+																		Snacken.
+																	</p>
+																	<div class="qodef-e-read-more"
+																		style="text-align: left;">
+																		<a href="#"
+																			style="display: inline-flex; align-items: center; gap: 8px; color: #0F313A; text-decoration: none; font-weight: 600; font-family: 'Sora', sans-serif; font-size: 16px; transition: opacity 0.3s;">
+																			<span>Mehr anzeigen</span>
+																			<svg xmlns="http://www.w3.org/2000/svg"
+																				width="18" height="18"
+																				viewBox="0 0 24 24" fill="none"
+																				stroke="currentColor" stroke-width="2"
+																				stroke-linecap="round"
+																				stroke-linejoin="round">
+																				<line x1="5" y1="12" x2="19" y2="12">
+																				</line>
+																				<polyline points="12 5 19 12 12 19">
+																				</polyline>
+																			</svg>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</article>
+
+													<!-- Raspberries -->
+													<article
+														class="qodef-e qodef-blog-item qodef-item--full post type-post status-publish format-standard product-item"
+														data-category="fruits"
+														style="flex: 0 0 auto; width: 384px; max-width: 100%;">
+														<div class="qodef-e-inner">
+															<div class="qodef-e-media">
+																<div class="custom-card-visual"
+																	style="width: 384px; height: 458px; position: relative; margin: 0 auto 30px;">
+																	<div
+																		style="max-width: 100%; width: 384px; height: 457.64px; left: 0; top: 0; position: absolute;">
+																		<div
+																			style="width: 384px; height: 288px; left: 0; top: 158.44px; position: absolute; background-color: #FFB8D8;">
+																			<div
+																				style="width: 100%; height: 288px; left: 0; top: -144px; position: absolute; display: flex; justify-content: center; align-items: center; font-size: 180px;">
+																				🫐</div>
+																			<div
+																				style="left: 24px; top: 209.92px; position: absolute; justify-content: center; color: #083344; font-size: 2.5rem; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 65.44px;">
+																				Himbeeren</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="qodef-e-content">
+																<div
+																	style="max-width: 100%; width: 384px; margin: 0 auto;">
+																	<div
+																		style="display: inline-flex; justify-content: start; align-items: center; gap: 14px; margin-bottom: 20px;">
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Ballaststoffe</div>
+																		</div>
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Vitamine</div>
+																		</div>
+																	</div>
+																	<p class="qodef-e-excerpt"
+																		style="color: #0F313A !important; text-align: left; font-size: 26px; line-height: 1.3; margin-bottom: 20px;">
+																		Feines Aroma für höchste Ansprüche in der Küche.
+																	</p>
+																	<div class="qodef-e-read-more"
+																		style="text-align: left;">
+																		<a href="#"
+																			style="display: inline-flex; align-items: center; gap: 8px; color: #0F313A; text-decoration: none; font-weight: 600; font-family: 'Sora', sans-serif; font-size: 16px; transition: opacity 0.3s;">
+																			<span>Mehr anzeigen</span>
+																			<svg xmlns="http://www.w3.org/2000/svg"
+																				width="18" height="18"
+																				viewBox="0 0 24 24" fill="none"
+																				stroke="currentColor" stroke-width="2"
+																				stroke-linecap="round"
+																				stroke-linejoin="round">
+																				<line x1="5" y1="12" x2="19" y2="12">
+																				</line>
+																				<polyline points="12 5 19 12 12 19">
+																				</polyline>
+																			</svg>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</article>
+
+													<!-- Apricot -->
+													<article
+														class="qodef-e qodef-blog-item qodef-item--full post type-post status-publish format-standard product-item"
+														data-category="fruits"
+														style="flex: 0 0 auto; width: 384px; max-width: 100%;">
+														<div class="qodef-e-inner">
+															<div class="qodef-e-media">
+																<div class="custom-card-visual"
+																	style="width: 384px; height: 458px; position: relative; margin: 0 auto 30px;">
+																	<div
+																		style="max-width: 100%; width: 384px; height: 457.64px; left: 0; top: 0; position: absolute;">
+																		<div
+																			style="width: 384px; height: 288px; left: 0; top: 158.44px; position: absolute; background-color: #FFE9B1;">
+																			<div
+																				style="width: 100%; height: 288px; left: 0; top: -144px; position: absolute; display: flex; justify-content: center; align-items: center; font-size: 180px;">
+																				🍑</div>
+																			<div
+																				style="left: 24px; top: 209.92px; position: absolute; justify-content: center; color: #083344; font-size: 2.5rem; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 65.44px;">
+																				Aprikose</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="qodef-e-content">
+																<div
+																	style="max-width: 100%; width: 384px; margin: 0 auto;">
+																	<div
+																		style="display: inline-flex; justify-content: start; align-items: center; gap: 14px; margin-bottom: 20px;">
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Beta-Carotin</div>
+																		</div>
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Mineralien</div>
+																		</div>
+																	</div>
+																	<p class="qodef-e-excerpt"
+																		style="color: #0F313A !important; text-align: left; font-size: 26px; line-height: 1.3; margin-bottom: 20px;">
+																		Sonnengereift und reich an wertvollen
+																		Nährstoffen.
+																	</p>
+																	<div class="qodef-e-read-more"
+																		style="text-align: left;">
+																		<a href="#"
+																			style="display: inline-flex; align-items: center; gap: 8px; color: #0F313A; text-decoration: none; font-weight: 600; font-family: 'Sora', sans-serif; font-size: 16px; transition: opacity 0.3s;">
+																			<span>Mehr anzeigen</span>
+																			<svg xmlns="http://www.w3.org/2000/svg"
+																				width="18" height="18"
+																				viewBox="0 0 24 24" fill="none"
+																				stroke="currentColor" stroke-width="2"
+																				stroke-linecap="round"
+																				stroke-linejoin="round">
+																				<line x1="5" y1="12" x2="19" y2="12">
+																				</line>
+																				<polyline points="12 5 19 12 12 19">
+																				</polyline>
+																			</svg>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</article>
+
 													<!-- Brokkoli -->
 													<article
-														class="qodef-e qodef-blog-item qodef-item--full post-1320 post type-post status-publish format-standard has-post-thumbnail hentry category-freight category-multimodal tag-business tag-shipping tag-supplychain"
+														class="qodef-e qodef-blog-item qodef-item--full post type-post status-publish format-standard product-item"
+														data-category="vegetables"
 														style="flex: 0 0 auto; width: 384px; max-width: 100%;">
 														<div class="qodef-e-inner">
 															<div class="qodef-e-media">
@@ -912,86 +1275,10 @@
 														</div>
 													</article>
 
-													<!-- Kartoffel -->
-													<article
-														class="qodef-e qodef-blog-item qodef-item--full post-1328 post type-post status-publish format-standard has-post-thumbnail hentry category-freight category-multimodal tag-business tag-shipping tag-supplychain"
-														style="flex: 0 0 auto; width: 384px; max-width: 100%;">
-														<div class="qodef-e-inner">
-															<div class="qodef-e-media">
-																<div class="custom-card-visual"
-																	style="width: 384px; height: 458px; position: relative; margin: 0 auto 30px;">
-																	<div
-																		style="max-width: 100%; width: 384px; height: 457.64px; left: 0; top: 0; position: absolute;">
-																		<div
-																			style="width: 384px; height: 288px; left: 0; top: 158.44px; position: absolute; background-color: #FFEEA4;">
-																			<div
-																				style="width: 100%; height: 288px; left: 0; top: -144px; position: absolute; display: flex; justify-content: center;">
-																				<img loading="lazy"
-																					style="width: 320px; height: 288px;"
-																					src="assets/img/Kartoffel_Image.svg" />
-																			</div>
-																			<div
-																				style="left: 24px; top: 209.92px; position: absolute; justify-content: center; color: #083344; font-size: 3rem; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 65.44px;">
-																				Kartoffel</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="qodef-e-content">
-																<div
-																	style="max-width: 100%; width: 384px; margin: 0 auto;">
-																	<div
-																		style="display: inline-flex; justify-content: start; align-items: center; gap: 14px; margin-bottom: 20px;">
-																		<div
-																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
-																			<div
-																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
-																			</div>
-																			<div
-																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
-																				Natürliche Stärke</div>
-																		</div>
-																		<div
-																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
-																			<div
-																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
-																			</div>
-																			<div
-																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
-																				Wichtige Vitamine</div>
-																		</div>
-																	</div>
-																	<p class="qodef-e-excerpt"
-																		style="color: #0F313A !important; text-align: left; font-size: 26px; line-height: 1.3; margin-bottom: 20px;">
-																		Liefert konstante Energie mit natürlich reichen
-																		Mineralstoffen
-																	</p>
-																	<div class="qodef-e-read-more"
-																		style="text-align: left;">
-																		<a href="#"
-																			style="display: inline-flex; align-items: center; gap: 8px; color: #0F313A; text-decoration: none; font-weight: 600; font-family: 'Sora', sans-serif; font-size: 16px; transition: opacity 0.3s;">
-																			<span>Mehr anzeigen</span>
-																			<svg xmlns="http://www.w3.org/2000/svg"
-																				width="18" height="18"
-																				viewBox="0 0 24 24" fill="none"
-																				stroke="currentColor" stroke-width="2"
-																				stroke-linecap="round"
-																				stroke-linejoin="round">
-																				<line x1="5" y1="12" x2="19" y2="12">
-																				</line>
-																				<polyline points="12 5 19 12 12 19">
-																				</polyline>
-																			</svg>
-																		</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</article>
-
 													<!-- Bohnen -->
 													<article
-														class="qodef-e qodef-blog-item qodef-item--full post-1331 post type-post status-publish format-standard has-post-thumbnail hentry category-freight category-multimodal tag-business tag-shipping tag-supplychain"
+														class="qodef-e qodef-blog-item qodef-item--full post type-post status-publish format-standard product-item"
+														data-category="vegetables"
 														style="flex: 0 0 auto; width: 384px; max-width: 100%;">
 														<div class="qodef-e-inner">
 															<div class="qodef-e-media">
@@ -1065,9 +1352,144 @@
 															</div>
 														</div>
 													</article>
+
+													<!-- Olive Oil -->
+													<article
+														class="qodef-e qodef-blog-item qodef-item--full post type-post status-publish format-standard product-item"
+														data-category="mediterranean"
+														style="flex: 0 0 auto; width: 384px; max-width: 100%;">
+														<div class="qodef-e-inner">
+															<div class="qodef-e-media">
+																<div class="custom-card-visual"
+																	style="width: 384px; height: 458px; position: relative; margin: 0 auto 30px;">
+																	<div
+																		style="max-width: 100%; width: 384px; height: 457.64px; left: 0; top: 0; position: absolute;">
+																		<div
+																			style="width: 384px; height: 288px; left: 0; top: 158.44px; position: absolute; background-color: #E6E897;">
+																			<div
+																				style="width: 100%; height: 288px; left: 0; top: -144px; position: absolute; display: flex; justify-content: center; align-items: center; font-size: 180px;">
+																				🫒</div>
+																			<div
+																				style="left: 24px; top: 209.92px; position: absolute; justify-content: center; color: #083344; font-size: 2.5rem; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 65.44px;">
+																				Olivenöl</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="qodef-e-content">
+																<div
+																	style="max-width: 100%; width: 384px; margin: 0 auto;">
+																	<div
+																		style="display: inline-flex; justify-content: start; align-items: center; gap: 14px; margin-bottom: 20px;">
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Gesunde Fette</div>
+																		</div>
+																		<div
+																			style="display: flex; justify-content: start; align-items: center; gap: 6px;">
+																			<div
+																				style="width: 6px; height: 6px; background-color: #083344; border-radius: 50%;">
+																			</div>
+																			<div
+																				style="justify-content: center; color: black; font-size: 16px; font-weight: 400; font-family: 'Sora', sans-serif; line-height: 20px;">
+																				Polyphenole</div>
+																		</div>
+																	</div>
+																	<p class="qodef-e-excerpt"
+																		style="color: #0F313A !important; text-align: left; font-size: 26px; line-height: 1.3; margin-bottom: 20px;">
+																		Premium Extra Vergine für puren mediterranen
+																		Genuss.
+																	</p>
+																	<div class="qodef-e-read-more"
+																		style="text-align: center;">
+																		<a href="#"
+																			style="display: inline-flex; align-items: center; gap: 8px; color: #0F313A; text-decoration: none; font-weight: 600; font-family: 'Sora', sans-serif; font-size: 16px; transition: opacity 0.3s;">
+																			<span>Mehr anzeigen</span>
+																			<svg xmlns="http://www.w3.org/2000/svg"
+																				width="18" height="18"
+																				viewBox="0 0 24 24" fill="none"
+																				stroke="currentColor" stroke-width="2"
+																				stroke-linecap="round"
+																				stroke-linejoin="round">
+																				<line x1="5" y1="12" x2="19" y2="12">
+																				</line>
+																				<polyline points="12 5 19 12 12 19">
+																				</polyline>
+																			</svg>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</article>
+
 												</div>
 											</div>
 
+											<script>
+												document.addEventListener('DOMContentLoaded', () => {
+													const filterBadges = document.querySelectorAll('.filter-badge');
+													const items = document.querySelectorAll('.product-item');
+
+													function applyFilter(filter, isInitial = false) {
+														const toShow = [];
+														const toHide = [];
+
+														items.forEach(item => {
+															if (item.getAttribute('data-category') === filter) {
+																toShow.push(item);
+															} else {
+																toHide.push(item);
+															}
+														});
+
+														// Hide items instantly to prevent layout shifting
+														toHide.forEach(item => {
+															item.style.display = 'none';
+															item.style.opacity = '0';
+															item.style.transform = 'translateY(3px)';
+															item.style.pointerEvents = 'none';
+														});
+
+														// Show items
+														toShow.forEach((item, index) => {
+															item.style.display = 'block';
+															item.style.pointerEvents = 'auto';
+
+															if (isInitial) {
+																item.style.opacity = '1';
+																item.style.transform = 'translateY(0)';
+															} else {
+																// Small delay to ensure display: block is processed before transition
+																requestAnimationFrame(() => {
+																	setTimeout(() => {
+																		item.style.opacity = '1';
+																		item.style.transform = 'translateY(0)';
+																	}, index * 80 + 20);
+																});
+															}
+														});
+													}
+
+													// Apply initial filter on load
+													applyFilter('fruits', true);
+
+													filterBadges.forEach(badge => {
+														badge.addEventListener('click', () => {
+															if (badge.classList.contains('active')) return;
+
+															filterBadges.forEach(b => b.classList.remove('active'));
+															badge.classList.add('active');
+															applyFilter(badge.getAttribute('data-filter'));
+														});
+													});
+												});
+											</script>
 										</div>
 									</div>
 								</div>
@@ -1137,7 +1559,7 @@
 															}
 														</style>
 														<div class="qodef-m-button clear"
-															style="text-align: left; margin: 0;">
+															style="text-align: center; margin: 0;">
 															<!-- <p
 																style="color: #0F313A; margin: 20px 0; font-size: 16px; line-height: 1.6;">
 																Ob Brokkoli, Kartoffeln oder Bohnen – jedes Produkt
