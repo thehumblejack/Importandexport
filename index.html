@@ -628,7 +628,7 @@
 									}
 
 									.custom-hero__title {
-										font-family: 'Inter Tight', sans-serif;
+										font-family: 'Circular Std', 'Circular', sans-serif;
 										font-size: 60px;
 										font-weight: 600;
 										line-height: 1.2;
@@ -653,7 +653,7 @@
 										padding: 18px 36px;
 										background-color: #ffffff;
 										color: #1E1E1E;
-										font-family: 'Inter Tight', sans-serif;
+										font-family: 'Circular Std', 'Circular', sans-serif;
 										font-size: 16px;
 										font-weight: 600;
 										text-decoration: none;
@@ -2126,19 +2126,44 @@
 				gap: 40px;
 			}
 			
+			.custom-nav-menu li {
+				position: relative;
+			}
+			
 			.custom-nav-menu li a {
+				position: relative;
+				display: inline-block;
 				color: #0F313A;
-				font-family: 'Inter', 'Plus Jakarta Sans', sans-serif;
-				font-size: 16px;
+				font-family: 'Circular Std', 'Circular', sans-serif;
+				font-size: 15px;
 				font-weight: 600;
 				text-decoration: none;
 				text-transform: uppercase;
-				letter-spacing: 0.5px;
-				transition: color 0.3s ease;
+				letter-spacing: 1.2px;
+				padding: 8px 0;
+				transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			
+			.custom-nav-menu li a::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 0;
+				height: 2px;
+				background-color: #6a9c37;
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+				transform: translateX(-50%);
+				opacity: 0;
 			}
 			
 			.custom-nav-menu li a:hover {
 				color: #6a9c37;
+			}
+			
+			.custom-nav-menu li a:hover::after {
+				width: 100%;
+				opacity: 1;
 			}
 
 			/* Premium Footer Styles */
@@ -2152,14 +2177,19 @@
 			/* Glassmorphism Sticky & Main Header */
 			.qodef-header-sticky,
 			#qodef-page-header-inner {
-				background-color: rgba(255, 255, 255, 0.45) !important;
-				backdrop-filter: blur(12px);
-				-webkit-backdrop-filter: blur(12px);
-				border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+				background-color: rgba(255, 255, 255, 0.75) !important;
+				backdrop-filter: blur(24px) saturate(180%);
+				-webkit-backdrop-filter: blur(24px) saturate(180%);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+				box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 
-			.qodef-header-sticky .qodef-header-sticky-inner {
+			.qodef-header-sticky .qodef-header-sticky-inner,
+			#qodef-page-header-inner {
 				background-color: transparent !important;
+				padding-left: 60px !important;
+				padding-right: 60px !important;
 			}
 
 			/* Mobile Menu Custom Styles */
