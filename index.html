@@ -413,7 +413,7 @@
 		the content</a>
 	<div id="qodef-page-wrapper" class="">
 		<header id="qodef-page-header" role="banner">
-			<div id="qodef-page-header-inner" class="" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+			<div id="qodef-page-header-inner" class="" style="display: flex; justify-content: space-between; align-items: center; width: 100%; position: relative;">
 					<a itemprop="url" class="qodef-header-logo-link qodef-height--set qodef-source--image"
 						href="index.html" rel="home">
 						<img loading="lazy" width="216" height="76" src="wp-content/uploads/2024/04/Fidelfood-black.svg"
@@ -2107,6 +2107,17 @@
 				scroll-behavior: smooth;
 			}
 			
+			.qodef-header-navigation {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			
+			.qodef-header-sticky-inner,
+			#qodef-page-header-inner {
+				position: relative;
+			}
+
 			.custom-nav-menu {
 				display: flex;
 				list-style: none;
