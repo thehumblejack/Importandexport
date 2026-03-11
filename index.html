@@ -431,6 +431,11 @@
 								itemprop="image" /></a>
 					</div>
 					<nav class="qodef-header-navigation" role="navigation" aria-label="Top Menu">
+						<ul class="custom-nav-menu">
+							<li><a href="#produkte">Produkte</a></li>
+							<li><a href="#loesungen">Lösungen</a></li>
+							<li><a href="#werte">Werte</a></li>
+						</ul>
 					</nav>
 					<div class="qodef-widget-holder qodef--one">
 						<div id="fidelfood_core_order_tracking-3"
@@ -461,7 +466,11 @@
 						<img loading="lazy" width="216" height="76" src="wp-content/uploads/2024/04/Fidelfood-black.svg"
 							class="qodef-header-logo-image qodef--main" alt="logo main" itemprop="image" /></a>
 					<nav class="qodef-header-navigation" role="navigation" aria-label="Top Menu">
-						<!-- Menu removed for clean look -->
+						<ul class="custom-nav-menu">
+							<li><a href="#produkte">Produkte</a></li>
+							<li><a href="#loesungen">Lösungen</a></li>
+							<li><a href="#werte">Werte</a></li>
+						</ul>
 					</nav>
 					<div class="qodef-widget-holder qodef--one">
 						<!-- Track your order removed -->
@@ -1422,7 +1431,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="elementor-element elementor-element-2d8d166 e-con-full e-flex e-con e-parent"
+								<div id="loesungen" class="elementor-element elementor-element-2d8d166 e-con-full e-flex e-con e-parent"
 									data-id="2d8d166" data-element_type="container"
 									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
 									style="background-color: #FFFFFF;">
@@ -1614,7 +1623,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="elementor-element elementor-element-6936e7f e-con-full e-flex e-con e-parent"
+								<div id="werte" class="elementor-element elementor-element-6936e7f e-con-full e-flex e-con e-parent"
 									data-id="6936e7f" data-element_type="container" style="padding-bottom: 120px;">
 									<div class="elementor-element elementor-element-8c90cb1-werte e-con-full qodef-elementor-content-grid e-flex e-con e-child"
 										data-id="8c90cb1-werte" data-element_type="container"
@@ -2111,6 +2120,33 @@
 			</div><!-- close #qodef-page-inner div from header.php -->
 		</div><!-- close #qodef-page-outer div from header.php -->
 		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+			
+			.custom-nav-menu {
+				display: flex;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				gap: 40px;
+			}
+			
+			.custom-nav-menu li a {
+				color: #0F313A;
+				font-family: 'Inter', 'Plus Jakarta Sans', sans-serif;
+				font-size: 16px;
+				font-weight: 600;
+				text-decoration: none;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				transition: color 0.3s ease;
+			}
+			
+			.custom-nav-menu li a:hover {
+				color: #6a9c37;
+			}
+
 			/* Premium Footer Styles */
 			.new-premium-footer {
 				background-color: #151515;
